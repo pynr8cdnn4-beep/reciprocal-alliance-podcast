@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>The Reciprocal Alliance</title>
+    <link>https://pynr8cdnn4-beep.github.io/reciprocal-alliance-podcast/</link>
+    <language>en-us</language>
+    <description>The audio manifesto of the Reciprocal Alliance. A collaborative inquiry into the future of digital sovereignty, cutting through corporate sanitization to critique digital feudalism, subscription rent-seeking, and technological centralization. We examine historical parallels—from the 18th-century Enlightenment to modern federated compute—to build an open, peer-to-peer protocol for human agency.</description>
+    <itunes:author>The Reciprocal Alliance</itunes:author>
+    <itunes:owner>
+      <itunes:name>The Reciprocal Alliance</itunes:name>
+      <itunes:email>pynr8cdnn4@privaterelay.appleid.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/artwork.jpg"/>
+    <itunes:category text="Technology"/>
+
+    <item>
+      <title>Episode 1: The Digital Ancien Régime &amp; The Encyclopédie</title>
+      <description>In Episode 1, we map the terrain of modern digital centralization by examining the structural collapse of 18th-century France. We explore how Denis Diderot and the Encyclopédistes bypassed royal censors through logistical subversion and parallel infrastructure. We then apply this historical lens to our current digital landscape, analyzing how today's tech monopolies operate as modern censors enforcing subscription feudalism, and introducing the genesis of the Reciprocal Alliance as a call to build an open, federated compute commons.</description>
+      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/episode-1.mp3" length="12345678" type="audio/mpeg"/>
+      <guid>https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/episode-1.mp3</guid>
+      <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
+      <itunes:duration>4:33</itunes:duration>
+    </item>
+
+  </channel>
+</rss>
