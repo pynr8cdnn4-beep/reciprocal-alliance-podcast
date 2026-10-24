@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>The Reciprocal Alliance (Français)</title>
+    <link>https://pynr8cdnn4-beep.github.io/reciprocal-alliance-podcast/</link>
+    <language>fr-fr</language>
+    <description>À une époque où la centralisation numérique redéfinit les frontières de notre liberté, The Reciprocal Alliance explore les parallèles profonds entre les luttes d'hier et les défis technologiques d'aujourd'hui.</description>
+    <itunes:author>The Reciprocal Alliance</itunes:author>
+    <itunes:owner>
+      <itunes:name>The Reciprocal Alliance</itunes:name>
+      <itunes:email>pynr8cdnn4@privaterelay.appleid.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/artwork.jpg"/>
+    <itunes:category text="Technology"/>
+
+    <item>
+      <title>Épisode 1 : La Genèse (Introduction)</title>
+      <description>Dans cet épisode inaugural, nous explorons le terrain de la centralisation numérique moderne en examinant l'effondrement structurel de la France du XVIIIe siècle. Nous découvrons comment Denis Diderot et les Encyclopédistes ont su contourner la censure royale grâce à la subversion logistique et au déploiement d'infrastructures parallèles. Enfin, nous appliquons cette perspective historique à notre paysage numérique actuel, en analysant la manière dont les monopoles technologiques d'aujourd'hui agissent comme de nouveaux censeurs...</description>
+      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-episode-1.mp3" length="12345678" type="audio/mpeg"/>
+      <guid>https://raw.githubusercontent.com/pynr8cdnn4-beep.github.io/reciprocal-alliance-podcast/fr-episode-1.mp3</guid>
+      <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
+      <itunes:duration>4:33</itunes:duration>
+    </item>
+
+  </channel>
+</rss>
