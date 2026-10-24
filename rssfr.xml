@@ -16,8 +16,8 @@
     <item>
       <title>Épisode 2 : Le Pilier 1 — L'Ancien Régime Numérique</title>
       <description>Dans cet épisode, nous approfondissons le premier pilier de notre analyse de la centralisation numérique, en faisant le parallèle entre les structures de contrôle historiques et les monopoles technologiques actuels.</description>
-      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr%202%20Episode%202%20Le%20Pilier%201%20%E2%80%94%20L%27Ancien%20R%C3%A9gime%20Num%C3%A9rique.mp3" length="2820000" type="audio/mpeg"/>
-      <guid>https://pynr8cdnn4-beep.github.io/reciprocal-alliance-podcast/fr%202%20Episode%202%20Le%20Pilier%201%20%E2%80%94%20L%27Ancien%20R%C3%A9gime%20Num%C3%A9rique.mp3</guid>
+      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-episode-2.mp3" length="2820000" type="audio/mpeg"/>
+      <guid>https://pynr8cdnn4-beep.github.io/reciprocal-alliance-podcast/fr-episode-2.mp3</guid>
       <pubDate>Sat, 24 Oct 2026 12:00:00 GMT</pubDate>
       <itunes:duration>5:00</itunes:duration>
     </item>
@@ -25,8 +25,8 @@
     <item>
       <title>Épisode 1 : La Genèse (Introduction)</title>
       <description>Dans cet épisode inaugural, nous explorons le terrain de la centralisation numérique moderne en examinant l'effondrement structurel de la France du XVIIIe siècle. Nous découvrons comment Denis Diderot et les Encyclopédistes ont su contourner la censure royale grâce à la subversion logistique et au déploiement d'infrastructures parallèles. Enfin, nous appliquons cette perspective historique à notre paysage numérique actuel, en analysant la manière dont les monopoles technologiques d'aujourd'hui agissent comme de nouveaux censeurs...</description>
-      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr%201%20Episode%201%20La%20Gen%C3%A8se%20%28Introduction%29.mp3" length="3450000" type="audio/mpeg"/>
-      <guid>https://pynr8cdnn4-beep.github.io/reciprocal-alliance-podcast/fr%201%20Episode%201%20La%20Gen%C3%A8se%20%28Introduction%29.mp3</guid>
+      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-episode-1.mp3" length="3450000" type="audio/mpeg"/>
+      <guid>https://pynr8cdnn4-beep.github.io/reciprocal-alliance-podcast/fr-episode-1.mp3</guid>
       <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
       <itunes:duration>4:33</itunes:duration>
     </item>
