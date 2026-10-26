@@ -15,6 +15,17 @@
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
 
+       <item>
+      <title>Épisode 10 : Le Coût de l'Aube — Semer les Communs à l'Ombre des Fiefs</title>
+      <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/reciprocal-alliance-cover.jpg"/>
+      <description>Dans cet épisode conclusif, nous dressons un bilan lucide et historique : quitter la plateforme est techniquement envisageable mais encore économiquement inaccessible pour le commun des mortels. L'IA n'est pas encore un service public. Les 5 Piliers ne sont pas un exil immédiat, mais les graines indispensables du futur. Épisode conclu par le récapitulatif 'En d'autres termes'.</description>
+      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep10-le-cout-de-l-aube.mp3" length="4320000" type="audio/mpeg"/>
+      <guid isPermaLink="false">fr-episode-10</guid>
+      <pubDate>Sun, 01 Nov 2026 08:00:00 GMT</pubDate>
+      <itunes:duration>4:45</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    
     <item>
       <title>Épisode 9 : L'Horizon Futur — Quitter la Plateforme</title>
       <description>Dans ce dernier volet de la trilogie opérationnelle, nous esquissons l'horizon au-delà des fiefs numériques. En traversant une journée type dans la vie d'un esprit souverain et en rappelant la filiation historique de l'imprimerie et de l'Encyclopédie de Diderot, nous lançons l'invitation solennelle à délaisser la dépendance aux plateformes pour bâtir ensemble les communs numériques.</description>
