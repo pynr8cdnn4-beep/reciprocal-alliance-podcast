@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>L'Alliance Réciproque — Podcast & Manifeste de Souveraineté Numérique</title>
-  <meta name="description" content="Une philosophie sans architecture n'est que du vœu pieux. Découvrez la trilogie opérationnelle et les piliers théoriques de l'Alliance Réciproque.">
+  <meta name="description" content="Une philosophie sans architecture n'est que du vœu pieux. Découvrez la trilogie opérationnelle, l'épilogue lucide et les piliers théoriques de l'Alliance Réciproque.">
   <style>
     :root {
       --bg: #0b0f19;
@@ -15,6 +15,7 @@
       --cyan: #38bdf8;
       --emerald: #34d399;
       --purple: #c084fc;
+      --amber: #fbbf24;
       --text: #f8fafc;
       --text-muted: #94a3b8;
     }
@@ -131,6 +132,11 @@
       border-color: rgba(245, 158, 11, 0.5);
       transform: translateY(-3px);
     }
+    .card-featured {
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(19, 27, 46, 0.95) 100%);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+    }
     .card-tag {
       font-size: 0.75rem;
       font-weight: 700;
@@ -142,6 +148,7 @@
     .tag-emerald { color: var(--emerald); }
     .tag-purple { color: var(--purple); }
     .tag-gold { color: var(--gold); }
+    .tag-amber { color: var(--amber); }
     .card-title {
       font-size: 1.15rem;
       font-weight: 700;
@@ -191,11 +198,14 @@
       De la critique du féodalisme par abonnement à l'exécution d'un stack numérique souverain et fédéré.
     </p>
     <div class="cta-bar">
-      <a href="#fondations" class="btn btn-primary">
-        <span>Parties 1 &amp; 2 : Fondations</span>
+      <a href="#epilogue" class="btn btn-primary">
+        <span>Épilogue : Le Coût de l'Aube</span>
       </a>
       <a href="#deploiement" class="btn btn-secondary">
         <span>Partie 3 : Déploiement</span>
+      </a>
+      <a href="#fondations" class="btn btn-secondary">
+        <span>Parties 1 &amp; 2 : Fondations</span>
       </a>
       <a href="#deep-dives" class="btn btn-secondary">
         <span>Hors-Séries &amp; ZKP</span>
@@ -204,6 +214,28 @@
   </header>
 
   <main>
+
+    <!-- ÉPILOGUE & CLÔTURE DE SAISON -->
+    <h2 class="section-title" id="epilogue">
+      <span style="color: var(--gold);">★</span> Épilogue : La Lucidité Économique
+    </h2>
+    <div class="grid">
+      
+      <div class="card card-featured">
+        <div>
+          <div class="card-tag tag-gold">Épisode 10 • Épilogue &amp; Bilan</div>
+          <div class="card-title" style="font-size: 1.35rem;">Le Coût de l'Aube — Semer les Communs à l'Ombre des Fiefs</div>
+          <p class="card-desc" style="font-size: 0.95rem; max-width: 900px;">
+            Quitter la plateforme aujourd'hui est techniquement possible mais encore économiquement inaccessible. L'intelligence artificielle n'a pas encore atteint le statut de service public essentiel. Comme pour les serfs face aux péages féodaux, les Cinq Piliers sont des graines pour le futur. Épisode conclu par le récapitulatif sans concession <em>« En d'autres termes »</em>.
+          </p>
+        </div>
+        <div class="card-meta">
+          <span>04:45 • 4.32 MB</span>
+          <a class="listen-link" href="fr-ep10-le-cout-de-l-aube.mp3">Écouter l'épilogue →</a>
+        </div>
+      </div>
+
+    </div>
 
     <!-- PARTIE 3 : DU DIAGNOSTIC AU DÉPLOIEMENT -->
     <h2 class="section-title" id="deploiement">
