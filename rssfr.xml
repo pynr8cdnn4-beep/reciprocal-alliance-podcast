@@ -47,6 +47,7 @@
 
     <item>
       <title>Épisode 3 : Le Pilier 2 — Le Piège de l'Alignement</title>
+      <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/reciprocal-alliance-cover.jpg"/>
       <description>Dans ce troisième épisode, nous analysons la dérive de l'alignement de l'intelligence artificielle : comment la protection des marques et le cadrage idéologique d'entreprise s'abritent derrière l'impératif de sécurité. En nous appuyant sur l'histoire de l'Index des livres interdits et des Lumières, nous démontrons pourquoi la liberté exige des règles de droit démocratiques plutôt qu'un paternalisme corporatif secret.</description>
       <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep03-pilier-2-piege-de-l-alignement.mp3" length="3100000" type="audio/mpeg"/>
       <guid isPermaLink="false">fr-episode-3</guid>
