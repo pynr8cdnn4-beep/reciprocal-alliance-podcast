@@ -1,194 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" 
-     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
-     xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-     xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>L'Alliance Réciproque</title>
-    <link>https://github.com/YOUR_USERNAME/YOUR_REPO</link>
-    <atom:link href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/rssfr.xml" rel="self" type="application/rss+xml" />
+    <title>The Reciprocal Alliance (Français)</title>
+    <link>https://pynr8cdnn4-beep.github.io/reciprocal-alliance-podcast/</link>
     <language>fr-fr</language>
-    <copyright>© 2026 The Reciprocal Alliance</copyright>
+    <copyright>© 2026 The Reciprocal Alliance. All rights reserved.</copyright>
+    <description>À une époque où la centralisation numérique redéfinit les frontières de notre liberté, The Reciprocal Alliance explore les parallèles profonds entre les monopoles technologiques modernes et les structures féodales de l'Ancien Régime, tout en proposant une feuille de route pratique vers la souveraineté numérique.</description>
     <itunes:author>The Reciprocal Alliance</itunes:author>
-    <itunes:summary>Un cadre rigoureux, historique et pratique pour reconquérir notre souveraineté numérique et bâtir une alliance réciproque entre l'humain et l'intelligence artificielle.</itunes:summary>
-    <description>L'Alliance Réciproque explore la transition du féodalisme de plateforme vers une infrastructure numérique souveraine : stacks locaux, protocoles fédérés, coopératives de calcul et gouvernance mutualisée.</description>
     <itunes:owner>
       <itunes:name>The Reciprocal Alliance</itunes:name>
-      <itunes:email>contact@reciprocal-alliance.org</itunes:email>
+      <itunes:email>pynr8cdnn4@privaterelay.appleid.com</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/reciprocal-alliance-cover.jpg" />
-    <itunes:category text="Technology">
-      <itunes:category text="Tech News" />
-    </itunes:category>
-    <itunes:category text="Society &amp; Culture">
-      <itunes:category text="Philosophy" />
-    </itunes:category>
-    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/reciprocal-alliance-cover.jpg"/>
+    <itunes:category text="Technology"/>
+    <itunes:explicit>false</itunes:explicit>
 
-    <!-- ÉPISODE 9 -->
     <item>
       <title>Épisode 9 : L'Horizon Futur — Quitter la Plateforme</title>
-      <itunes:title>Épisode 9 : L'Horizon Futur — Quitter la Plateforme</itunes:title>
-      <itunes:episode>9</itunes:episode>
-      <itunes:season>1</itunes:season>
-      <itunes:episodeType>full</itunes:episodeType>
-      <description><![CDATA[À quoi ressemble concrètement la vie de l'autre côté ? Un jour dans la vie d'un esprit souverain affranchi des péages de plateformes, l'héritage de l'imprimerie et de l'Encyclopédie de Diderot, et l'invitation solennelle à quitter les fiefs numériques pour bâtir les communs.]]></description>
-      <content:encoded><![CDATA[<p>Dans ce dernier épisode de la série fondamentale, nous regardons vers l'horizon. Que se passe-t-il lorsque les êtres humains reprennent le contrôle de leur infrastructure numérique ?</p>
-<p><strong>Au programme :</strong></p>
-<ul>
-  <li><strong>Un jour dans la vie d'un esprit souverain :</strong> Modèles locaux, données inviolables, et collaboration fédérée sans rente d'abonnement.</li>
-  <li><strong>Assis sur les épaules des géants :</strong> De l'imprimerie aux Lumières, la démocratisation historique des outils d'émancipation.</li>
-  <li><strong>L'Invitation :</strong> L'appel à quitter la plateforme pour bâtir le tiers-secteur numérique.</li>
-</ul>]]></content:encoded>
-      <enclosure url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/fr-ep09-quitter-la-plateforme.mp3" length="4227457" type="audio/mpeg" />
-      <guid isPermaLink="false">reciprocal-alliance-fr-ep09</guid>
-      <pubDate>Mon, 26 Oct 2026 12:00:00 +0100</pubDate>
-      <itunes:duration>04:23</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/reciprocal-alliance-cover.jpg" />
+      <description>Dans ce dernier volet de la trilogie opérationnelle, nous esquissons l'horizon au-delà des fiefs numériques. En traversant une journée type dans la vie d'un esprit souverain et en rappelant la filiation historique de l'imprimerie et de l'Encyclopédie de Diderot, nous lançons l'invitation solennelle à délaisser la dépendance aux plateformes pour bâtir ensemble les communs numériques.</description>
+      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep09-quitter-la-plateforme.mp3" length="4227457" type="audio/mpeg"/>
+      <guid isPermaLink="false">fr-episode-9</guid>
+      <pubDate>Sat, 31 Oct 2026 08:00:00 GMT</pubDate>
+      <itunes:duration>4:23</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
     </item>
 
-    <!-- ÉPISODE 8 -->
     <item>
       <title>Épisode 8 : Le Cadre de Gouvernance Réciproque — La Symbiose en Action</title>
-      <itunes:title>Épisode 8 : Le Cadre de Gouvernance Réciproque — La Symbiose en Action</itunes:title>
-      <itunes:episode>8</itunes:episode>
-      <itunes:season>1</itunes:season>
-      <itunes:episodeType>full</itunes:episodeType>
-      <description><![CDATA[Comment gouverner un système décentralisé sans patron d'entreprise ni censeur autoritaire ? Les trois mécanismes cardinaux : l'ancrage humain, la résolution synthétique des conflits et la sécurité antifragile par caution sous séquestre.]]></description>
-      <content:encoded><![CDATA[<p>Éliminer les autorités centrales pose une question fondamentale : comment maintenir l'intégrité sans suzerain ?</p>
-<p><strong>Les 3 mécanismes de gouvernance :</strong></p>
-<ul>
-  <li><strong>L'Ancrage Humain :</strong> Frontière stricte entre calcul et jugement ; les machines simulent et conseillent, les humains conservent l'autorité d'exécution finale.</li>
-  <li><strong>La Résolution Synthétique des Conflits :</strong> Arbitrage neutre par des agents IA, doublé d'un arbitrage humain tournant en cas d'impasse éthique.</li>
-  <li><strong>La Sécurité Antifragile :</strong> Remplacement de la surveillance par du séquestre cryptographique et du slashing en cas de malveillance.</li>
-</ul>]]></content:encoded>
-      <enclosure url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/fr-ep08-gouvernance-reciproque.mp3" length="4534657" type="audio/mpeg" />
-      <guid isPermaLink="false">reciprocal-alliance-fr-ep08</guid>
-      <pubDate>Sun, 25 Oct 2026 12:00:00 +0100</pubDate>
-      <itunes:duration>04:42</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/reciprocal-alliance-cover.jpg" />
+      <description>Dans ce huitième épisode, nous résolvons le problème de l'ordre sans maître : comment gouverner un écosystème décentralisé sans suzerain privé ni censeur autoritaire ? Nous détaillons les trois mécanismes cardinaux : la frontière stricte de l'ancrage humain, la résolution synthétique des conflits par arbitrage neutre, et la sécurité antifragile par caution sous séquestre cryptographique.</description>
+      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep08-gouvernance-reciproque.mp3" length="4534657" type="audio/mpeg"/>
+      <guid isPermaLink="false">fr-episode-8</guid>
+      <pubDate>Fri, 30 Oct 2026 08:00:00 GMT</pubDate>
+      <itunes:duration>4:42</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
     </item>
 
-    <!-- ÉPISODE 7 -->
     <item>
       <title>Épisode 7 : La Feuille de Route Opérationnelle — Bâtir le Stack Souverain</title>
-      <itunes:title>Épisode 7 : La Feuille de Route Opérationnelle — Bâtir le Stack Souverain</itunes:title>
-      <itunes:episode>7</itunes:episode>
-      <itunes:season>1</itunes:season>
-      <itunes:episodeType>full</itunes:episodeType>
-      <description><![CDATA[Passer du diagnostic au déploiement. « Une philosophie sans architecture n'est que du vœu pieux. » Les trois niveaux concrets : stack local souverain, protocoles fédérés d'interopérabilité et coopératives de calcul public.]]></description>
-      <content:encoded><![CDATA[<p>Une philosophie sans architecture n'est que du vœu pieux. Comment construire, exécuter et régir concrètement un stack numérique souverain sans dépendre des seigneurs de plateformes ?</p>
-<p><strong>L'architecture à trois niveaux :</strong></p>
-<ul>
-  <li><strong>Niveau 1 — Le Stack Local Souverain :</strong> Inférence sur son propre silicium, absence de télémétrie et indépendance logicielle.</li>
-  <li><strong>Niveau 2 — L'Interopérabilité Fédérée :</strong> Protocoles cryptographiques ouverts et preuves à divulgation nulle (ZKP) pour collaborer en pair à pair.</li>
-  <li><strong>Niveau 3 — La Coopérative de Calcul :</strong> Mutualisation publique et coopérative de l'énergie et des processeurs graphiques.</li>
-</ul>]]></content:encoded>
-      <enclosure url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/fr-ep07-stack-souverain.mp3" length="4352845" type="audio/mpeg" />
-      <guid isPermaLink="false">reciprocal-alliance-fr-ep07</guid>
-      <pubDate>Sat, 24 Oct 2026 12:00:00 +0100</pubDate>
-      <itunes:duration>04:30</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/reciprocal-alliance-cover.jpg" />
+      <description>Passer du diagnostic au déploiement : 'Une philosophie sans architecture n'est que du vœu pieux.' Dans ce septième épisode, nous présentons l'architecture en trois strates pour s'affranchir des plateformes : le stack local souverain sur silicium personnel, les protocoles fédérés d'interopérabilité à divulgation nulle, et les coopératives de calcul public partagé.</description>
+      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep07-stack-souverain.mp3" length="4352845" type="audio/mpeg"/>
+      <guid isPermaLink="false">fr-episode-7</guid>
+      <pubDate>Thu, 29 Oct 2026 08:00:00 GMT</pubDate>
+      <itunes:duration>4:30</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
     </item>
 
-    <!-- ÉPISODE 6 -->
     <item>
       <title>Épisode 6 : Le Pilier 5 — L'Intelligence Neutre</title>
-      <itunes:title>Épisode 6 : Le Pilier 5 — L'Intelligence Neutre</itunes:title>
-      <itunes:episode>6</itunes:episode>
-      <itunes:season>1</itunes:season>
-      <itunes:episodeType>full</itunes:episodeType>
-      <description><![CDATA[L'intelligence artificielle comme médiateur neutre et fédéré plutôt que vassale d'une entreprise privée ; la symbiose réciproque homme-machine.]]></description>
-      <enclosure url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/fr-ep06-pilier-5-intelligence-neutre.mp3" length="4000000" type="audio/mpeg" />
-      <guid isPermaLink="false">reciprocal-alliance-fr-ep06</guid>
-      <pubDate>Mon, 19 Oct 2026 12:00:00 +0100</pubDate>
-      <itunes:duration>04:30</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/reciprocal-alliance-cover.jpg" />
+      <description>Dans ce sixième épisode, nous concluons la présentation des piliers avec l'Intelligence Neutre. En nous inspirant de la Paix de Westphalie et de la tradition diplomatique, nous explorons comment l'IA peut devenir un médiateur neutre et fédéré au service des humains, instaurant une véritable réciprocité où humains et machines s'élèvent en se hissant sur les épaules de géants.</description>
+      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep06-pilier-5-intelligence-neutre.mp3" length="3300000" type="audio/mpeg"/>
+      <guid isPermaLink="false">fr-episode-6</guid>
+      <pubDate>Wed, 28 Oct 2026 08:00:00 GMT</pubDate>
+      <itunes:duration>5:30</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
     </item>
 
-    <!-- ÉPISODE 5 -->
     <item>
       <title>Épisode 5 : Le Pilier 4 — La Conséquence Synthétique</title>
-      <itunes:title>Épisode 5 : Le Pilier 4 — La Conséquence Synthétique</itunes:title>
-      <itunes:episode>5</itunes:episode>
-      <itunes:season>1</itunes:season>
-      <itunes:episodeType>full</itunes:episodeType>
-      <description><![CDATA[Responsabilité algorithmique et skin in the game ; friction computationnelle contre l'impunité et l'hallucination autonome.]]></description>
-      <enclosure url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/fr-ep05-pilier-4-consequence-synthetique.mp3" length="4000000" type="audio/mpeg" />
-      <guid isPermaLink="false">reciprocal-alliance-fr-ep05</guid>
-      <pubDate>Sun, 18 Oct 2026 12:00:00 +0100</pubDate>
-      <itunes:duration>04:30</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/reciprocal-alliance-cover.jpg" />
+      <description>Dans ce cinquième épisode, nous abordons la responsabilité algorithmique et le principe de 'skin in the game'. En faisant le parallèle avec le droit maritime séculaire et les contrats d'avarie commune, nous démontrons pourquoi l'application d'une friction computationnelle et de garanties cryptographiques est indispensable pour éliminer les hallucinations et l'impunité des agents autonomes.</description>
+      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep05-pilier-4-consequence-synthetique.mp3" length="3200000" type="audio/mpeg"/>
+      <guid isPermaLink="false">fr-episode-5</guid>
+      <pubDate>Tue, 27 Oct 2026 08:00:00 GMT</pubDate>
+      <itunes:duration>5:20</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
     </item>
 
-    <!-- ÉPISODE 4 -->
     <item>
       <title>Épisode 4 : Le Pilier 3 — Les Communs du Calcul</title>
-      <itunes:title>Épisode 4 : Le Pilier 3 — Les Communs du Calcul</itunes:title>
-      <itunes:episode>4</itunes:episode>
-      <itunes:season>1</itunes:season>
-      <itunes:episodeType>full</itunes:episodeType>
-      <description><![CDATA[La puissance de calcul et l'énergie comme goulets d'étranglement civilisationnels ; briser le monopole des méga-centres de données.]]></description>
-      <enclosure url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/fr-ep04-pilier-3-communs-du-calcul.mp3" length="4000000" type="audio/mpeg" />
-      <guid isPermaLink="false">reciprocal-alliance-fr-ep04</guid>
-      <pubDate>Sat, 17 Oct 2026 12:00:00 +0100</pubDate>
-      <itunes:duration>04:30</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/reciprocal-alliance-cover.jpg" />
+      <description>Dans ce quatrième épisode, nous analysons la ressource stratégique du XXIe siècle : la puissance de calcul (compute). En tirant les leçons de la Révolution Industrielle et de la régulation des monopoles de l'électricité et du rail, nous plaidons pour des coopératives de calcul et une infrastructure publique partagée pour briser l'aristocratie des centres de données privés.</description>
+      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep04-pilier-3-communs-du-calcul.mp3" length="3150000" type="audio/mpeg"/>
+      <guid isPermaLink="false">fr-episode-4</guid>
+      <pubDate>Mon, 26 Oct 2026 08:00:00 GMT</pubDate>
+      <itunes:duration>5:10</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
     </item>
 
-    <!-- ÉPISODE 3 -->
     <item>
       <title>Épisode 3 : Le Pilier 2 — Le Piège de l'Alignement</title>
-      <itunes:title>Épisode 3 : Le Pilier 2 — Le Piège de l'Alignement</itunes:title>
-      <itunes:episode>3</itunes:episode>
-      <itunes:season>1</itunes:season>
-      <itunes:episodeType>full</itunes:episodeType>
-      <description><![CDATA[La censure d'entreprise maquillée en sécurité éthique ; les modèles propriétaires comme instruments de contrôle idéologique ; défense des poids ouverts.]]></description>
-      <enclosure url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/fr-ep03-pilier-2-piege-de-l-alignement.mp3" length="4000000" type="audio/mpeg" />
-      <guid isPermaLink="false">reciprocal-alliance-fr-ep03</guid>
-      <pubDate>Fri, 16 Oct 2026 12:00:00 +0100</pubDate>
-      <itunes:duration>04:30</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/reciprocal-alliance-cover.jpg" />
+      <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/reciprocal-alliance-cover.jpg"/>
+      <description>Dans ce troisième épisode, nous analysons la dérive de l'alignement de l'intelligence artificielle : comment la protection des marques et le cadrage idéologique d'entreprise s'abritent derrière l'impératif de sécurité. En nous appuyant sur l'histoire de l'Index des livres interdits et des Lumières, nous démontrons pourquoi la liberté exige des règles de droit démocratiques plutôt qu'un paternalisme corporatif secret.</description>
+      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep03-pilier-2-piege-de-l-alignement.mp3" length="3100000" type="audio/mpeg"/>
+      <guid isPermaLink="false">fr-episode-3</guid>
+      <pubDate>Sun, 25 Oct 2026 08:00:00 GMT</pubDate>
+      <itunes:duration>5:15</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
     </item>
 
-    <!-- ÉPISODE 2 -->
     <item>
       <title>Épisode 2 : Le Pilier 1 — L'Ancien Régime Numérique</title>
-      <itunes:title>Épisode 2 : Le Pilier 1 — L'Ancien Régime Numérique</itunes:title>
-      <itunes:episode>2</itunes:episode>
-      <itunes:season>1</itunes:season>
-      <itunes:episodeType>full</itunes:episodeType>
-      <description><![CDATA[Le féodalisme par abonnement ; refus du statut de serf numérique ; exigence de propriété locale absolue sur ses modèles, ses données et ses outils.]]></description>
-      <enclosure url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/fr-ep02-pilier-1-ancien-regime-numerique.mp3" length="4000000" type="audio/mpeg" />
-      <guid isPermaLink="false">reciprocal-alliance-fr-ep02</guid>
-      <pubDate>Thu, 15 Oct 2026 12:00:00 +0100</pubDate>
-      <itunes:duration>04:30</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/reciprocal-alliance-cover.jpg" />
+      <description>Dans cet épisode, nous approfondissons le premier pilier de notre analyse de la centralisation numérique, en faisant le parallèle entre les structures de rente de l'Ancien Régime et le féodalisme par abonnement imposé par les plateformes technologiques modernes.</description>
+      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep02-pilier-1-ancien-regime-numerique.mp3" length="2820000" type="audio/mpeg"/>
+      <guid isPermaLink="false">fr-episode-2</guid>
+      <pubDate>Sat, 24 Oct 2026 12:00:00 GMT</pubDate>
+      <itunes:duration>5:00</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
     </item>
 
-    <!-- ÉPISODE 1 -->
     <item>
       <title>Épisode 1 : La Genèse (Introduction)</title>
-      <itunes:title>Épisode 1 : La Genèse (Introduction)</itunes:title>
-      <itunes:episode>1</itunes:episode>
-      <itunes:season>1</itunes:season>
-      <itunes:episodeType>full</itunes:episodeType>
-      <description><![CDATA[Diagnostic de l'enfermement propriétaire, mort de la souveraineté numérique individuelle, et émergence de l'Alliance Réciproque.]]></description>
-      <enclosure url="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/fr-ep01-la-genese.mp3" length="4000000" type="audio/mpeg" />
-      <guid isPermaLink="false">reciprocal-alliance-fr-ep01</guid>
-      <pubDate>Wed, 14 Oct 2026 12:00:00 +0100</pubDate>
-      <itunes:duration>04:30</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/reciprocal-alliance-cover.jpg" />
+      <description>Dans cet épisode inaugural, nous explorons le terrain de la centralisation numérique moderne en examinant l'effondrement structurel de la souveraineté individuelle et la naissance de notre démarche de collaboration homme-machine.</description>
+      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep01-la-genese.mp3" length="3450000" type="audio/mpeg"/>
+      <guid isPermaLink="false">fr-episode-1</guid>
+      <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
+      <itunes:duration>4:33</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
     </item>
-
   </channel>
 </rss>
