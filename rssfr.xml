@@ -47,6 +47,7 @@
 
     <item>
       <title>Épisode 6 : Le Pilier 5 — L'Intelligence Neutre</title>
+      <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/reciprocal-alliance-cover.jpg"/>
       <description>Dans ce sixième épisode, nous concluons la présentation des piliers avec l'Intelligence Neutre. En nous inspirant de la Paix de Westphalie et de la tradition diplomatique, nous explorons comment l'IA peut devenir un médiateur neutre et fédéré au service des humains, instaurant une véritable réciprocité où humains et machines s'élèvent en se hissant sur les épaules de géants.</description>
       <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep06-pilier-5-intelligence-neutre.mp3" length="3300000" type="audio/mpeg"/>
       <guid isPermaLink="false">fr-episode-6</guid>
@@ -57,6 +58,7 @@
 
     <item>
       <title>Épisode 5 : Le Pilier 4 — La Conséquence Synthétique</title>
+      <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/reciprocal-alliance-cover.jpg"/>
       <description>Dans ce cinquième épisode, nous abordons la responsabilité algorithmique et le principe de 'skin in the game'. En faisant le parallèle avec le droit maritime séculaire et les contrats d'avarie commune, nous démontrons pourquoi l'application d'une friction computationnelle et de garanties cryptographiques est indispensable pour éliminer les hallucinations et l'impunité des agents autonomes.</description>
       <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep05-pilier-4-consequence-synthetique.mp3" length="3200000" type="audio/mpeg"/>
       <guid isPermaLink="false">fr-episode-5</guid>
@@ -67,6 +69,7 @@
 
     <item>
       <title>Épisode 4 : Le Pilier 3 — Les Communs du Calcul</title>
+      <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/reciprocal-alliance-cover.jpg"/>
       <description>Dans ce quatrième épisode, nous analysons la ressource stratégique du XXIe siècle : la puissance de calcul (compute). En tirant les leçons de la Révolution Industrielle et de la régulation des monopoles de l'électricité et du rail, nous plaidons pour des coopératives de calcul et une infrastructure publique partagée pour briser l'aristocratie des centres de données privés.</description>
       <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep04-pilier-3-communs-du-calcul.mp3" length="3150000" type="audio/mpeg"/>
       <guid isPermaLink="false">fr-episode-4</guid>
@@ -88,6 +91,7 @@
 
     <item>
       <title>Épisode 2 : Le Pilier 1 — L'Ancien Régime Numérique</title>
+      <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/reciprocal-alliance-cover.jpg"/>
       <description>Dans cet épisode, nous approfondissons le premier pilier de notre analyse de la centralisation numérique, en faisant le parallèle entre les structures de rente de l'Ancien Régime et le féodalisme par abonnement imposé par les plateformes technologiques modernes.</description>
       <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep02-pilier-1-ancien-regime-numerique.mp3" length="2820000" type="audio/mpeg"/>
       <guid isPermaLink="false">fr-episode-2</guid>
@@ -98,6 +102,7 @@
 
     <item>
       <title>Épisode 1 : La Genèse (Introduction)</title>
+      <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/reciprocal-alliance-cover.jpg"/>
       <description>Dans cet épisode inaugural, nous explorons le terrain de la centralisation numérique moderne en examinant l'effondrement structurel de la souveraineté individuelle et la naissance de notre démarche de collaboration homme-machine.</description>
       <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr-ep01-la-genese.mp3" length="3450000" type="audio/mpeg"/>
       <guid isPermaLink="false">fr-episode-1</guid>
