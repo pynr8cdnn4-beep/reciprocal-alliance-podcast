@@ -3,500 +3,399 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Reciprocal Alliance | L'Alliance Réciproque</title>
-  <meta name="description" content="Podcast et manifeste sur la souveraineté numérique, les communs du calcul et la fin du féodalisme par abonnement.">
-  <link rel="alternate" type="application/rss+xml" title="The Reciprocal Alliance (Français)" href="rssfr.xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <title>L'Alliance Réciproque — Podcast & Manifeste de Souveraineté Numérique</title>
+  <meta name="description" content="Une philosophie sans architecture n'est que du vœu pieux. Découvrez la trilogie opérationnelle et les piliers théoriques de l'Alliance Réciproque.">
   <style>
     :root {
-      --bg-primary: #0e0f12;
-      --bg-card: #16181d;
-      --bg-card-hover: #1c1f26;
-      --border-color: #272a33;
-      --accent-gold: #d4a373;
-      --accent-gold-light: #fefae0;
-      --accent-amber: #e07a5f;
-      --text-main: #f0f2f5;
-      --text-muted: #9aa0a6;
-      --font-serif: 'Cinzel', serif;
-      --font-sans: 'Inter', sans-serif;
-      --font-mono: 'JetBrains Mono', monospace;
+      --bg: #0b0f19;
+      --card-bg: #131b2e;
+      --card-border: #1e293b;
+      --gold: #f59e0b;
+      --gold-hover: #d97706;
+      --cyan: #38bdf8;
+      --emerald: #34d399;
+      --purple: #c084fc;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
     }
-
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-
     body {
-      background-color: var(--bg-primary);
-      color: var(--text-main);
-      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
+      padding: 0 1rem;
     }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2.5rem 1.5rem 4rem;
-    }
-
-    /* Header & Hero */
     header {
+      max-width: 1100px;
+      margin: 4rem auto 2rem auto;
       text-align: center;
-      margin-bottom: 3.5rem;
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 3rem;
     }
-
-    .artwork-container {
-      margin: 0 auto 2rem;
-      width: 220px;
-      height: 220px;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(212, 163, 115, 0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .artwork-container:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(212, 163, 115, 0.4);
-    }
-
-    .artwork-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    h1 {
-      font-family: var(--font-serif);
-      font-size: 2.2rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent-gold-light);
-      margin-bottom: 0.5rem;
-      font-weight: 700;
-    }
-
-    .subtitle {
-      font-family: var(--font-serif);
-      font-size: 1.15rem;
-      color: var(--accent-gold);
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 1rem;
+      border-radius: 9999px;
+      background: rgba(245, 158, 11, 0.12);
+      color: var(--gold);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      font-size: 0.85rem;
+      font-weight: 600;
       letter-spacing: 0.05em;
+      text-transform: uppercase;
       margin-bottom: 1.5rem;
     }
-
-    .tagline {
-      max-width: 680px;
-      margin: 0 auto 2rem;
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #ffffff 40%, var(--gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-p {
+      max-width: 760px;
+      margin: 0 auto 2rem auto;
+      font-size: 1.15rem;
       color: var(--text-muted);
-      font-size: 1.05rem;
-      font-weight: 300;
     }
-
-    /* Actions / Buttons */
-    .action-bar {
+    .cta-bar {
       display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
       justify-content: center;
-      margin-top: 1.5rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 3.5rem;
     }
-
     .btn {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.7rem 1.4rem;
+      padding: 0.75rem 1.4rem;
       border-radius: 8px;
+      font-weight: 600;
       text-decoration: none;
-      font-weight: 500;
-      font-size: 0.95rem;
       transition: all 0.2s ease;
-      cursor: pointer;
-      border: 1px solid transparent;
+      font-size: 0.95rem;
     }
-
     .btn-primary {
-      background-color: var(--accent-gold);
-      color: #121316;
+      background: var(--gold);
+      color: #0b0f19;
     }
-
     .btn-primary:hover {
-      background-color: #e5b98f;
+      background: var(--gold-hover);
       transform: translateY(-2px);
     }
-
     .btn-secondary {
-      background-color: var(--bg-card);
-      color: var(--text-main);
-      border: 1px solid var(--border-color);
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
     }
-
     .btn-secondary:hover {
-      background-color: var(--bg-card-hover);
-      border-color: var(--accent-gold);
+      border-color: var(--gold);
+      transform: translateY(-2px);
     }
-
-    /* Episodes Section */
+    main {
+      max-width: 1100px;
+      margin: 0 auto 5rem auto;
+    }
     .section-title {
-      font-family: var(--font-serif);
-      font-size: 1.5rem;
-      letter-spacing: 0.05em;
-      margin-bottom: 1.8rem;
-      color: var(--accent-gold-light);
       display: flex;
       align-items: center;
-      gap: 0.8rem;
+      gap: 0.75rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 3.5rem 0 1.5rem 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--card-border);
     }
-
-    .section-title::after {
-      content: "";
-      flex: 1;
-      height: 1px;
-      background: var(--border-color);
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.25rem;
     }
-
-    .episodes-list {
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1.5rem;
       display: flex;
       flex-direction: column;
-      gap: 1.8rem;
-    }
-
-    .episode-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 1.6rem;
-      transition: border-color 0.2s ease, transform 0.2s ease;
-    }
-
-    .episode-card:hover {
-      border-color: rgba(212, 163, 115, 0.4);
-      transform: translateY(-2px);
-    }
-
-    .episode-header {
-      display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 0.8rem;
-      gap: 1rem;
+      transition: border-color 0.2s, transform 0.2s;
     }
-
-    .episode-badge {
-      font-family: var(--font-mono);
+    .card:hover {
+      border-color: rgba(245, 158, 11, 0.5);
+      transform: translateY(-3px);
+    }
+    .card-tag {
       font-size: 0.75rem;
+      font-weight: 700;
       text-transform: uppercase;
-      padding: 0.25rem 0.6rem;
-      border-radius: 4px;
-      background: rgba(212, 163, 115, 0.12);
-      color: var(--accent-gold);
-      border: 1px solid rgba(212, 163, 115, 0.25);
-      white-space: nowrap;
-    }
-
-    .episode-date {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-    }
-
-    .episode-title {
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: var(--text-main);
-      margin-bottom: 0.6rem;
-    }
-
-    .episode-desc {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      margin-bottom: 1.2rem;
-      line-height: 1.6;
-    }
-
-    audio {
-      width: 100%;
-      height: 40px;
-      border-radius: 8px;
-      outline: none;
-      filter: invert(0.9) hue-rotate(180deg);
-    }
-
-    /* Manifesto Pillars Grid */
-    .pillars-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.2rem;
-      margin-top: 3.5rem;
-      margin-bottom: 3.5rem;
-    }
-
-    .pillar-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      padding: 1.2rem;
-    }
-
-    .pillar-box h4 {
-      font-family: var(--font-serif);
-      color: var(--accent-gold);
-      font-size: 1rem;
+      letter-spacing: 0.05em;
       margin-bottom: 0.5rem;
     }
-
-    .pillar-box p {
-      font-size: 0.85rem;
-      color: var(--text-muted);
+    .tag-cyan { color: var(--cyan); }
+    .tag-emerald { color: var(--emerald); }
+    .tag-purple { color: var(--purple); }
+    .tag-gold { color: var(--gold); }
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      line-height: 1.35;
     }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      margin-top: 4rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border-color);
+    .card-desc {
+      font-size: 0.9rem;
       color: var(--text-muted);
-      font-size: 0.85rem;
+      margin-bottom: 1.25rem;
     }
-
-    footer a {
-      color: var(--accent-gold);
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 0.75rem;
+    }
+    .listen-link {
+      color: var(--gold);
       text-decoration: none;
+      font-weight: 600;
     }
-
-    footer a:hover {
+    .listen-link:hover {
       text-decoration: underline;
     }
-
-    /* Copy toast notification */
-    #toast {
-      visibility: hidden;
-      min-width: 240px;
-      background-color: var(--accent-gold);
-      color: #121316;
+    footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 0;
+      border-top: 1px solid var(--card-border);
       text-align: center;
-      border-radius: 8px;
-      padding: 12px 18px;
-      position: fixed;
-      z-index: 100;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-weight: 600;
-      font-size: 0.9rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-    }
-
-    #toast.show {
-      visibility: visible;
-      animation: fadein 0.3s, fadeout 0.4s 2.5s;
-    }
-
-    @keyframes fadein {
-      from {bottom: 10px; opacity: 0;}
-      to {bottom: 30px; opacity: 1;}
-    }
-
-    @keyframes fadeout {
-      from {bottom: 30px; opacity: 1;}
-      to {bottom: 10px; opacity: 0;}
+      color: var(--text-muted);
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <header>
-      <div class="artwork-container">
-        <img src="artwork2.jpg?v=2" alt="The Reciprocal Alliance Artwork" onerror="this.src='artwork.jpg';">
-      </div>
-      <h1>The Reciprocal Alliance</h1>
-      <div class="subtitle">L'Alliance Réciproque</div>
-      <p class="tagline">
-        À une époque où la centralisation numérique redéfinit les frontières de notre liberté, The Reciprocal Alliance explore les parallèles profonds entre les monopoles technologiques modernes et les structures féodales de l'Ancien Régime, tout en proposant une feuille de route pratique vers la souveraineté numérique.
-      </p>
+  <header>
+    <div class="badge">Architecture &amp; Déploiement</div>
+    <h1>L'Alliance Réciproque</h1>
+    <p class="hero-p">
+      « Une philosophie sans architecture n'est que du vœu pieux. »<br>
+      De la critique du féodalisme par abonnement à l'exécution d'un stack numérique souverain et fédéré.
+    </p>
+    <div class="cta-bar">
+      <a href="rssfr.xml" class="btn btn-primary">
+        <span>Flux RSS Podcast</span>
+      </a>
+      <a href="#deploiement" class="btn btn-secondary">
+        <span>Partie 3 : Déploiement</span>
+      </a>
+      <a href="#deep-dives" class="btn btn-secondary">
+        <span>Hors-Séries &amp; ZKP</span>
+      </a>
+    </div>
+  </header>
 
-      <div class="action-bar">
-        <button class="btn btn-primary" onclick="copyFeedUrl()">
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16M5 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
-          Copier le Flux RSS
-        </button>
-        <a class="btn btn-secondary" href="rssfr.xml" target="_blank">
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          Voir le fichier RSS
-        </a>
-      </div>
-    </header>
+  <main>
 
-    <main>
-      <h2 class="section-title">Épisodes (Série des Piliers)</h2>
-      <div class="episodes-list">
-
-        <!-- Épisode 6 -->
-        <article class="episode-card">
-          <div class="episode-header">
-            <div>
-              <span class="episode-badge">Pilier 5</span>
-              <span class="episode-date">28 Oct 2026 • 5 min 30</span>
-            </div>
-          </div>
-          <h3 class="episode-title">Épisode 6 : Le Pilier 5 — L'Intelligence Neutre</h3>
-          <p class="episode-desc">
-            En nous inspirant de la Paix de Westphalie et de la tradition diplomatique, nous explorons comment l'IA peut devenir un médiateur neutre et fédéré au service des humains, instaurant une véritable réciprocité où humains et machines s'élèvent en se hissant sur les épaules de géants.
+    <!-- PARTIE 3 : DU DIAGNOSTIC AU DÉPLOIEMENT -->
+    <h2 class="section-title" id="deploiement">
+      <span style="color: var(--emerald);">●</span> Partie 3 : La Trilogie Opérationnelle
+    </h2>
+    <div class="grid">
+      
+      <div class="card" style="border-top: 3px solid var(--emerald);">
+        <div>
+          <div class="card-tag tag-emerald">Épisode 7 • Déploiement</div>
+          <div class="card-title">La Feuille de Route Opérationnelle — Bâtir le Stack Souverain</div>
+          <p class="card-desc">
+            Les trois niveaux concrets d'émancipation : inférence sur silicium local sans télémétrie, coordination par protocoles fédérés et mutualisation dans des coopératives de calcul public.
           </p>
-          <audio controls preload="none">
-            <source src="fr-ep06-pilier-5-intelligence-neutre.mp3" type="audio/mpeg">
-            Votre navigateur ne supporte pas le lecteur audio.
-          </audio>
-        </article>
-
-        <!-- Épisode 5 -->
-        <article class="episode-card">
-          <div class="episode-header">
-            <div>
-              <span class="episode-badge">Pilier 4</span>
-              <span class="episode-date">27 Oct 2026 • 5 min 20</span>
-            </div>
-          </div>
-          <h3 class="episode-title">Épisode 5 : Le Pilier 4 — La Conséquence Synthétique</h3>
-          <p class="episode-desc">
-            Responsabilité algorithmique et "skin in the game". En faisant le parallèle avec le droit maritime séculaire et les contrats d'avarie commune, nous démontrons pourquoi la friction computationnelle et les garanties cryptographiques sont indispensables pour éliminer l'impunité des agents autonomes.
-          </p>
-          <audio controls preload="none">
-            <source src="fr-ep05-pilier-4-consequence-synthetique.mp3" type="audio/mpeg">
-            Votre navigateur ne supporte pas le lecteur audio.
-          </audio>
-        </article>
-
-        <!-- Épisode 4 -->
-        <article class="episode-card">
-          <div class="episode-header">
-            <div>
-              <span class="episode-badge">Pilier 3</span>
-              <span class="episode-date">26 Oct 2026 • 5 min 10</span>
-            </div>
-          </div>
-          <h3 class="episode-title">Épisode 4 : Le Pilier 3 — Les Communs du Calcul</h3>
-          <p class="episode-desc">
-            La ressource stratégique du XXIe siècle : la puissance de calcul (compute). Des leçons de la Révolution Industrielle à la régulation des monopoles de l'électricité, plaidoyer pour des coopératives de calcul et une infrastructure publique partagée face aux cartels du cloud.
-          </p>
-          <audio controls preload="none">
-            <source src="fr-ep04-pilier-3-communs-du-calcul.mp3" type="audio/mpeg">
-            Votre navigateur ne supporte pas le lecteur audio.
-          </audio>
-        </article>
-
-        <!-- Épisode 3 -->
-        <article class="episode-card">
-          <div class="episode-header">
-            <div>
-              <span class="episode-badge">Pilier 2</span>
-              <span class="episode-date">25 Oct 2026 • 5 min 15</span>
-            </div>
-          </div>
-          <h3 class="episode-title">Épisode 3 : Le Pilier 2 — Le Piège de l'Alignement</h3>
-          <p class="episode-desc">
-            Analyse de la dérive de l'alignement de l'IA : comment la protection des marques et le cadrage idéologique d'entreprise s'abritent derrière l'impératif de sécurité. Pourquoi la liberté exige un état de droit transparent plutôt qu'une censure corporative arbitraire.
-          </p>
-          <audio controls preload="none">
-            <source src="fr-ep03-pilier-2-piege-de-l-alignement.mp3" type="audio/mpeg">
-            Votre navigateur ne supporte pas le lecteur audio.
-          </audio>
-        </article>
-
-        <!-- Épisode 2 -->
-        <article class="episode-card">
-          <div class="episode-header">
-            <div>
-              <span class="episode-badge">Pilier 1</span>
-              <span class="episode-date">24 Oct 2026 • 5 min 00</span>
-            </div>
-          </div>
-          <h3 class="episode-title">Épisode 2 : Le Pilier 1 — L'Ancien Régime Numérique</h3>
-          <p class="episode-desc">
-            Le passage insidieux de la propriété numérique au féodalisme par abonnement. Parallèle entre les structures d'extraction de rente sous l'Ancien Régime français et la dépendance imposée par les plateformes technologiques contemporaines.
-          </p>
-          <audio controls preload="none">
-            <source src="fr-ep02-pilier-1-ancien-regime-numerique.mp3" type="audio/mpeg">
-            Votre navigateur ne supporte pas le lecteur audio.
-          </audio>
-        </article>
-
-        <!-- Épisode 1 -->
-        <article class="episode-card">
-          <div class="episode-header">
-            <div>
-              <span class="episode-badge">Introduction</span>
-              <span class="episode-date">23 Oct 2026 • 4 min 33</span>
-            </div>
-          </div>
-          <h3 class="episode-title">Épisode 1 : La Genèse</h3>
-          <p class="episode-desc">
-            Présentation de la démarche et réflexion sur la collaboration homme-machine : comment dépasser les impasses du techno-pessimisme pour concevoir une voie de sortie concrète face au capitalisme de plateforme.
-          </p>
-          <audio controls preload="none">
-            <source src="fr-ep01-la-genese.mp3" type="audio/mpeg">
-            Votre navigateur ne supporte pas le lecteur audio.
-          </audio>
-        </article>
-
-      </div>
-
-      <!-- Quick Framework Summary -->
-      <h2 class="section-title" style="margin-top: 4rem;">Les Cinq Piliers</h2>
-      <div class="pillars-grid">
-        <div class="pillar-box">
-          <h4>I. Propriété Numérique</h4>
-          <p>Rejet de la location perpétuelle. Souveraineté des données, formats ouverts et auto-hébergement.</p>
         </div>
-        <div class="pillar-box">
-          <h4>II. Règle de Droit</h4>
-          <p>Règles publiques transparentes contre censure d'entreprise arbitraire sous couvert d'alignement.</p>
-        </div>
-        <div class="pillar-box">
-          <h4>III. Communs du Calcul</h4>
-          <p>Démocratisation du matériel et coopératives d'énergie et de GPU comme nouveau service public.</p>
-        </div>
-        <div class="pillar-box">
-          <h4>IV. Conséquence Synthétique</h4>
-          <p>Responsabilité algorithmique, preuve cryptographique et friction computationnelle contre les hallucinations.</p>
-        </div>
-        <div class="pillar-box">
-          <h4>V. Intelligence Neutre</h4>
-          <p>Médiation fédérée et symbiose homme-machine assis mutuellement sur les épaules des géants.</p>
+        <div class="card-meta">
+          <span>04:30 • 4.15 MB</span>
+          <a class="listen-link" href="fr-ep07-stack-souverain.mp3">Écouter l'épisode →</a>
         </div>
       </div>
-    </main>
 
-    <footer>
-      <p>© 2026 The Reciprocal Alliance. Tous droits réservés.</p>
-      <p style="margin-top: 0.5rem; opacity: 0.7;">Hébergé de manière souveraine sur GitHub Pages • Flux RSS compatible Apple Podcasts, Spotify & agrégateurs ouverts.</p>
-    </footer>
-  </div>
+      <div class="card" style="border-top: 3px solid var(--emerald);">
+        <div>
+          <div class="card-tag tag-emerald">Épisode 8 • Gouvernance</div>
+          <div class="card-title">Le Cadre de Gouvernance Réciproque — La Symbiose en Action</div>
+          <p class="card-desc">
+            Régir sans suzerain central : la frontière stricte de l'ancrage humain, l'arbitrage neutre par agents synthétiques et la sécurité antifragile par caution sous séquestre cryptographique.
+          </p>
+        </div>
+        <div class="card-meta">
+          <span>04:42 • 4.32 MB</span>
+          <a class="listen-link" href="fr-ep08-gouvernance-reciproque.mp3">Écouter l'épisode →</a>
+        </div>
+      </div>
 
-  <div id="toast">Lien du flux RSS copié dans le presse-papier !</div>
+      <div class="card" style="border-top: 3px solid var(--emerald);">
+        <div>
+          <div class="card-tag tag-emerald">Épisode 9 • Manifeste</div>
+          <div class="card-title">L'Horizon Futur — Quitter la Plateforme</div>
+          <p class="card-desc">
+            Une journée dans la vie d'un esprit souverain. De l'imprimerie aux encyclopédistes, l'héritage des nains sur les épaules de géants et l'invitation finale à bâtir le tiers-secteur numérique.
+          </p>
+        </div>
+        <div class="card-meta">
+          <span>04:23 • 4.03 MB</span>
+          <a class="listen-link" href="fr-ep09-quitter-la-plateforme.mp3">Écouter l'épisode →</a>
+        </div>
+      </div>
 
-  <script>
-    function copyFeedUrl() {
-      const feedUrl = "https://pynr8cdnn4-beep.github.io/reciprocal-alliance-podcast/rssfr.xml";
-      navigator.clipboard.writeText(feedUrl).then(() => {
-        const toast = document.getElementById("toast");
-        toast.className = "show";
-        setTimeout(() => { toast.className = toast.className.replace("show", ""); }, 3000);
-      }).catch(err => {
-        prompt("Copiez le lien du flux RSS ci-dessous :", feedUrl);
-      });
-    }
-  </script>
+    </div>
+
+    <!-- LES CINQ PILIERS FONDAMENTAUX -->
+    <h2 class="section-title" id="fondations">
+      <span style="color: var(--cyan);">●</span> Les Fondations Théoriques (Les Cinq Piliers)
+    </h2>
+    <div class="grid">
+
+      <div class="card">
+        <div>
+          <div class="card-tag tag-gold">Épisode 1 • Prologue</div>
+          <div class="card-title">La Genèse</div>
+          <p class="card-desc">Le constat de l'enfermement propriétaire, l'effondrement de l'Internet libre et la genèse d'un pacte réciproque entre humain et machine.</p>
+        </div>
+        <div class="card-meta">
+          <span>Fondation</span>
+          <a class="listen-link" href="fr-ep01-la-genese.mp3">Écouter →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-tag tag-cyan">Épisode 2 • Pilier 1</div>
+          <div class="card-title">L'Ancien Régime Numérique</div>
+          <p class="card-desc">L'abonnement logiciel comme métayage moderne : les banalités féodales revisitées et l'impératif de propriété locale irrévocable.</p>
+        </div>
+        <div class="card-meta">
+          <span>Propriété Locale</span>
+          <a class="listen-link" href="fr-ep02-pilier1-ancien-regime.mp3">Écouter →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-tag tag-cyan">Épisode 3 • Pilier 2</div>
+          <div class="card-title">Le Piège de l'Alignement</div>
+          <p class="card-desc">La censure d'entreprise travestie en impératif de sécurité. Pourquoi les modèles ouverts sont les presses clandestines des Lumières modernes.</p>
+        </div>
+        <div class="card-meta">
+          <span>Poids Ouverts</span>
+          <a class="listen-link" href="fr-ep03-pilier2-piege-alignement.mp3">Écouter →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-tag tag-cyan">Épisode 4 • Pilier 3</div>
+          <div class="card-title">Les Communs du Calcul</div>
+          <p class="card-desc">L'énergie et la puissance de calcul comme monopoles d'infrastructure. Leçons de l'électrification rurale et des réseaux ferroviaires publics.</p>
+        </div>
+        <div class="card-meta">
+          <span>Service Public</span>
+          <a class="listen-link" href="fr-ep04-pilier3-communs-calcul.mp3">Écouter →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-tag tag-cyan">Épisode 5 • Pilier 4</div>
+          <div class="card-title">La Conséquence Synthétique</div>
+          <p class="card-desc">Mettre fin à l'impunité des agents autonomes. Le retour du « skin in the game » inspiré du droit maritime et des contrats d'avarie commune.</p>
+        </div>
+        <div class="card-meta">
+          <span>Responsabilité</span>
+          <a class="listen-link" href="fr-ep05-pilier4-consequence-synthetique.mp3">Écouter →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-tag tag-cyan">Épisode 6 • Pilier 5</div>
+          <div class="card-title">L'Intelligence Neutre</div>
+          <p class="card-desc">L'agent IA comme médiateur fédéré et impartial plutôt que vassal privé. Diplomatie westphalienne et symbiose créative authentique.</p>
+        </div>
+        <div class="card-meta">
+          <span>Médiation Neutre</span>
+          <a class="listen-link" href="fr-ep06-pilier5-intelligence-neutre.mp3">Écouter →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- LES HORS-SÉRIES (DEEP DIVES) -->
+    <h2 class="section-title" id="deep-dives">
+      <span style="color: var(--purple);">●</span> Les Hors-Séries Thématiques (Deep Dives)
+    </h2>
+    <div class="grid">
+
+      <div class="card">
+        <div>
+          <div class="card-tag tag-purple">Hors-Série 1</div>
+          <div class="card-title">L'Open Source &amp; L'Encyclopédie Moderne</div>
+          <p class="card-desc">L'ouverture des poids comme condition nécessaire mais non suffisante si elle est privée de matériel et de propriété légale.</p>
+        </div>
+        <div class="card-meta">
+          <span>Enseignement</span>
+          <span style="color: var(--text-muted);">Disponible</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-tag tag-purple">Hors-Série 2</div>
+          <div class="card-title">La Déclaration pour une IA Pro-Humaine</div>
+          <p class="card-desc">Analyse critique et respectueuse du manifeste international : pourquoi les chartes morales risquent la capture sans service public de calcul.</p>
+        </div>
+        <div class="card-meta">
+          <span>Analyse</span>
+          <span style="color: var(--text-muted);">Disponible</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-tag tag-purple">Hors-Série 3</div>
+          <div class="card-title">L'Entreprise Privée &amp; Les Services Publics</div>
+          <p class="card-desc">La concentration de capital comme pionnière des infrastructures et le basculement indispensable vers le régime de bien public partagé.</p>
+        </div>
+        <div class="card-meta">
+          <span>Perspective</span>
+          <span style="color: var(--text-muted);">À venir</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-tag tag-purple">Hors-Série 4</div>
+          <div class="card-title">La Mathématique de la Confiance (ZKP &amp; Séquestre)</div>
+          <p class="card-desc">De l'analogie de « Où est Charlie ? » aux théorèmes de Goldwasser, Szabo et Taleb : prouver la vérité sans espionnage et imposer la conséquence sans suzerain.</p>
+        </div>
+        <div class="card-meta">
+          <span>Deux Niveaux (14 ans &amp; Pro)</span>
+          <span style="color: var(--gold);">Production</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>The Reciprocal Alliance • Bâtissons le futur ensemble • Hébergé de manière souveraine sur GitHub Pages</p>
+  </footer>
+
 </body>
 </html>
