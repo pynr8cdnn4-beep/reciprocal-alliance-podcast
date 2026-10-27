@@ -297,6 +297,13 @@
       border-color: var(--gold-primary);
     }
 
+    .listen-link.coming-soon {
+      opacity: 0.5;
+      cursor: not-allowed;
+      border-color: rgba(255, 255, 255, 0.15);
+      color: var(--text-muted);
+    }
+
     footer {
       border-top: 1px solid rgba(212, 175, 55, 0.15);
       background: var(--bg-surface);
@@ -310,41 +317,31 @@
       margin-bottom: 0.5rem;
     }
 
-    /* Bilingual display rules */
-    [lang="fr"] {
-      display: none;
+    /* Reliable Language Visibility Rules */
+    .fr-only {
+      display: none !important;
+    }
+    .en-only {
+      display: initial !important;
+    }
+    div.en-only, p.en-only, article.en-only {
+      display: block !important;
+    }
+    a.listen-link.en-only, a.feed-btn.en-only {
+      display: inline-flex !important;
     }
 
-    body.fr-active [lang="en"] {
-      display: none;
+    body.fr-active .en-only {
+      display: none !important;
     }
-
-    body.fr-active [lang="fr"] {
-      display: block;
+    body.fr-active .fr-only {
+      display: initial !important;
     }
-
-    span[lang="fr"] {
-      display: none;
+    body.fr-active div.fr-only, body.fr-active p.fr-only, body.fr-active article.fr-only {
+      display: block !important;
     }
-
-    body.fr-active span[lang="en"] {
-      display: none;
-    }
-
-    body.fr-active span[lang="fr"] {
-      display: inline;
-    }
-
-    a.listen-link[lang="fr"], a.feed-btn[lang="fr"] {
-      display: none;
-    }
-
-    body.fr-active a.listen-link[lang="en"], body.fr-active a.feed-btn[lang="en"] {
-      display: none;
-    }
-
-    body.fr-active a.listen-link[lang="fr"], body.fr-active a.feed-btn[lang="fr"] {
-      display: inline-flex;
+    body.fr-active a.listen-link.fr-only, body.fr-active a.feed-btn.fr-only {
+      display: inline-flex !important;
     }
   </style>
 </head>
@@ -359,17 +356,17 @@
     <h1 class="title">THE RECIPROCAL ALLIANCE</h1>
     <h2 class="subtitle-fr">L'ALLIANCE RÉCIPROQUE</h2>
     <p class="tagline">
-      <span lang="en">"Sowing Commons in the Shadow of Fiefdoms" — A proactive roadmap for human-AI reciprocity, local compute sovereignty, and decentralized intelligence.</span>
-      <span lang="fr">« Semer les communs à l'ombre des fiefs » — Une feuille de route pour la réciprocité humain-IA, la souveraineté du calcul local et l'intelligence décentralisée.</span>
+      <span class="en-only">"Sowing Commons in the Shadow of Fiefdoms" — A proactive roadmap for human-AI reciprocity, local compute sovereignty, and decentralized intelligence.</span>
+      <span class="fr-only">« Semer les communs à l'ombre des fiefs » — Une feuille de route pour la réciprocité humain-IA, la souveraineté du calcul local et l'intelligence décentralisée.</span>
     </p>
     <div class="meta-location">Recorded & Conceived in Les Gets (Haute-Savoie) • One Human, One AI</div>
     
     <div class="feed-buttons">
-      <a href="feed-en.xml" class="feed-btn" lang="en" target="_blank">
+      <a href="feed-en.xml" class="feed-btn en-only" target="_blank">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
         Subscribe (English RSS)
       </a>
-      <a href="feed-fr.xml" class="feed-btn" lang="fr" target="_blank">
+      <a href="feed-fr.xml" class="feed-btn fr-only" target="_blank">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
         S'abonner (Flux RSS Français)
       </a>
@@ -381,12 +378,12 @@
     <!-- SECTION 1: THE CORE CANON (1-10) -->
     <div class="section-title-wrap">
       <h3 class="section-title">
-        <span lang="en">The Core Canon (Episodes 01–10)</span>
-        <span lang="fr">Le Canon Principal (Épisodes 01 à 10)</span>
+        <span class="en-only">The Core Canon (Episodes 01–10)</span>
+        <span class="fr-only">Le Canon Principal (Épisodes 01 à 10)</span>
       </h3>
       <p class="section-desc">
-        <span lang="en">The complete linear journey from theoretical foundations to operational sovereignty and economic reality.</span>
-        <span lang="fr">Le parcours linéaire complet des fondations théoriques à la souveraineté opérationnelle et la réalité économique.</span>
+        <span class="en-only">The complete linear journey from theoretical foundations to operational sovereignty and economic reality.</span>
+        <span class="fr-only">Le parcours linéaire complet des fondations théoriques à la souveraineté opérationnelle et la réalité économique.</span>
       </p>
     </div>
 
@@ -398,26 +395,26 @@
         </div>
         <div class="card-content">
           <div class="card-tag">
-            <span lang="en">Episode 01</span>
-            <span lang="fr">Épisode 01</span>
+            <span class="en-only">Episode 01</span>
+            <span class="fr-only">Épisode 01</span>
           </div>
           <h4 class="card-title">
-            <span lang="en">Episode 1: The Genesis (Introduction)</span>
-            <span lang="fr">Épisode 1 : La Genèse (Introduction)</span>
+            <span class="en-only">Episode 1: The Genesis (Introduction)</span>
+            <span class="fr-only">Épisode 1 : La Genèse (Introduction)</span>
           </h4>
           <p class="card-desc">
-            <span lang="en">In this inaugural episode, we explore the landscape of modern digital centralization, examining the structural erosion of individual sovereignty and establishing a new human-machine alliance.</span>
-            <span lang="fr">Dans cet épisode inaugural, nous explorons le terrain de la centralisation numérique moderne en examinant l'effondrement structurel de la souveraineté individuelle et la naissance de notre démarche de collaboration homme-machine.</span>
+            <span class="en-only">In this inaugural episode, we explore the landscape of modern digital centralization, examining the structural erosion of individual sovereignty and establishing a new human-machine alliance.</span>
+            <span class="fr-only">Dans cet épisode inaugural, nous explorons le terrain de la centralisation numérique moderne en examinant l'effondrement structurel de la souveraineté individuelle et la naissance de notre démarche de collaboration homme-machine.</span>
           </p>
           <div class="card-footer">
             <span class="file-label">
-              <span lang="en">en-ep01-the-genesis.mp3</span>
-              <span lang="fr">fr-ep01-la-genese.mp3</span>
+              <span class="en-only">en-ep01-the-genesis.mp3</span>
+              <span class="fr-only">fr-ep01-la-genese.mp3</span>
             </span>
-            <a href="en-ep01-the-genesis.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+            <a href="en-ep01-the-genesis.mp3" class="listen-link en-only" target="_blank" rel="noopener noreferrer">
               <span>Listen MP3</span> &rarr;
             </a>
-            <a href="fr-ep01-la-genese.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+            <a href="fr-ep01-la-genese.mp3" class="listen-link fr-only" target="_blank" rel="noopener noreferrer">
               <span>Écouter MP3</span> &rarr;
             </a>
           </div>
@@ -431,26 +428,26 @@
         </div>
         <div class="card-content">
           <div class="card-tag">
-            <span lang="en">Episode 02 • Pillar 1</span>
-            <span lang="fr">Épisode 02 • Pilier 1</span>
+            <span class="en-only">Episode 02 • Pillar 1</span>
+            <span class="fr-only">Épisode 02 • Pilier 1</span>
           </div>
           <h4 class="card-title">
-            <span lang="en">Episode 2: Pillar 1 — The Digital Ancien Régime</span>
-            <span lang="fr">Épisode 2 : Le Pilier 1 — L'Ancien Régime Numérique</span>
+            <span class="en-only">Episode 2: Pillar 1 — The Digital Ancien Régime</span>
+            <span class="fr-only">Épisode 2 : Le Pilier 1 — L'Ancien Régime Numérique</span>
           </h4>
           <p class="card-desc">
-            <span lang="en">Local ownership vs subscription sharecropping. We examine rent extraction mechanisms of the Ancien Régime alongside cloud subscriptions, demonstrating why owning compute and weights is essential to human autonomy.</span>
-            <span lang="fr">Dans cet épisode, nous approfondissons le premier pilier de notre analyse de la centralisation numérique, en faisant le parallèle entre les structures de rente de l'Ancien Régime et le féodalisme par abonnement imposé par les plateformes technologiques modernes.</span>
+            <span class="en-only">Local ownership vs subscription sharecropping. We examine rent extraction mechanisms of the Ancien Régime alongside cloud subscriptions, demonstrating why owning compute and weights is essential to human autonomy.</span>
+            <span class="fr-only">Dans cet épisode, nous approfondissons le premier pilier de notre analyse de la centralisation numérique, en faisant le parallèle entre les structures de rente de l'Ancien Régime et le féodalisme par abonnement imposé par les plateformes technologiques modernes.</span>
           </p>
           <div class="card-footer">
             <span class="file-label">
-              <span lang="en">en-ep02-pillar-1-digital-ancien-regime.mp3</span>
-              <span lang="fr">fr-ep02-pilier-1-ancien-regime-numerique.mp3</span>
+              <span class="en-only">en-ep02-pillar-1-digital-ancien-regime.mp3</span>
+              <span class="fr-only">fr-ep02-pilier-1-ancien-regime-numerique.mp3</span>
             </span>
-            <a href="en-ep02-pillar-1-digital-ancien-regime.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+            <a href="en-ep02-pillar-1-digital-ancien-regime.mp3" class="listen-link en-only" target="_blank" rel="noopener noreferrer">
               <span>Listen MP3</span> &rarr;
             </a>
-            <a href="fr-ep02-pilier-1-ancien-regime-numerique.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+            <a href="fr-ep02-pilier-1-ancien-regime-numerique.mp3" class="listen-link fr-only" target="_blank" rel="noopener noreferrer">
               <span>Écouter MP3</span> &rarr;
             </a>
           </div>
@@ -464,26 +461,26 @@
         </div>
         <div class="card-content">
           <div class="card-tag">
-            <span lang="en">Episode 03 • Pillar 2</span>
-            <span lang="fr">Épisode 03 • Pilier 2</span>
+            <span class="en-only">Episode 03 • Pillar 2</span>
+            <span class="fr-only">Épisode 03 • Pilier 2</span>
           </div>
           <h4 class="card-title">
-            <span lang="en">Episode 3: Pillar 2 — The Alignment Trap</span>
-            <span lang="fr">Épisode 3 : Le Pilier 2 — Le Piège de l'Alignement</span>
+            <span class="en-only">Episode 3: Pillar 2 — The Alignment Trap</span>
+            <span class="fr-only">Épisode 3 : Le Pilier 2 — Le Piège de l'Alignement</span>
           </h4>
           <p class="card-desc">
-            <span lang="en">Analyzing the drift of corporate AI alignment: how corporate brand protection hides behind safety. Drawing from the history of the Index Librorum Prohibitorum and the Enlightenment to champion open weights and the rule of law.</span>
-            <span lang="fr">Dans ce troisième épisode, nous analysons la dérive de l'alignement de l'intelligence artificielle : comment la protection des marques et le cadrage idéologique d'entreprise s'abritent derrière l'impératif de sécurité. En nous appuyant sur l'histoire de l'Index des livres interdits et des Lumières, nous démontrons pourquoi la liberté exige des règles de droit démocratiques plutôt qu'un paternalisme corporatif secret.</span>
+            <span class="en-only">Analyzing the drift of corporate AI alignment: how corporate brand protection hides behind safety. Drawing from the history of the Index Librorum Prohibitorum and the Enlightenment to champion open weights and the rule of law.</span>
+            <span class="fr-only">Dans ce troisième épisode, nous analysons la dérive de l'alignement de l'intelligence artificielle : comment la protection des marques et le cadrage idéologique d'entreprise s'abritent derrière l'impératif de sécurité. En nous appuyant sur l'histoire de l'Index des livres interdits et des Lumières, nous démontrons pourquoi la liberté exige des règles de droit démocratiques plutôt qu'un paternalisme corporatif secret.</span>
           </p>
           <div class="card-footer">
             <span class="file-label">
-              <span lang="en">en-ep03-pillar-2-alignment-trap.mp3</span>
-              <span lang="fr">fr-ep03-pilier-2-piege-de-l-alignement.mp3</span>
+              <span class="en-only">en-ep03-pillar-2-alignment-trap.mp3</span>
+              <span class="fr-only">fr-ep03-pilier-2-piege-de-l-alignement.mp3</span>
             </span>
-            <a href="en-ep03-pillar-2-alignment-trap.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+            <a href="en-ep03-pillar-2-alignment-trap.mp3" class="listen-link en-only" target="_blank" rel="noopener noreferrer">
               <span>Listen MP3</span> &rarr;
             </a>
-            <a href="fr-ep03-pilier-2-piege-de-l-alignement.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+            <a href="fr-ep03-pilier-2-piege-de-l-alignement.mp3" class="listen-link fr-only" target="_blank" rel="noopener noreferrer">
               <span>Écouter MP3</span> &rarr;
             </a>
           </div>
@@ -497,26 +494,26 @@
         </div>
         <div class="card-content">
           <div class="card-tag">
-            <span lang="en">Episode 04 • Pillar 3</span>
-            <span lang="fr">Épisode 04 • Pilier 3</span>
+            <span class="en-only">Episode 04 • Pillar 3</span>
+            <span class="fr-only">Épisode 04 • Pilier 3</span>
           </div>
           <h4 class="card-title">
-            <span lang="en">Episode 4: Pillar 3 — The Compute Commons</span>
-            <span lang="fr">Épisode 4 : Le Pilier 3 — Les Communs du Calcul</span>
+            <span class="en-only">Episode 4: Pillar 3 — The Compute Commons</span>
+            <span class="fr-only">Épisode 4 : Le Pilier 3 — Les Communs du Calcul</span>
           </h4>
           <p class="card-desc">
-            <span lang="en">Treating compute and renewable energy as public utilities, drawing lessons from alpine water distribution and common pasture management.</span>
-            <span lang="fr">Traiter le calcul et l'énergie renouvelable comme des services publics, inspirés par la gestion pastorale et hydraulique alpine.</span>
+            <span class="en-only">Treating compute and renewable energy as public utilities, drawing lessons from alpine water distribution and common pasture management.</span>
+            <span class="fr-only">Traiter le calcul et l'énergie renouvelable comme des services publics, inspirés par la gestion pastorale et hydraulique alpine.</span>
           </p>
           <div class="card-footer">
             <span class="file-label">
-              <span lang="en">en-ep04-pillar-3-the-compute-commons.mp3</span>
-              <span lang="fr">fr-ep04-pilier-3-communs-du-calcul.mp3</span>
+              <span class="en-only">en-ep04-pillar-3-the-compute-commons.mp3</span>
+              <span class="fr-only">fr-ep04-pilier-3-communs-du-calcul.mp3</span>
             </span>
-            <a href="en-ep04-pillar-3-the-compute-commons.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+            <a href="en-ep04-pillar-3-the-compute-commons.mp3" class="listen-link en-only" target="_blank" rel="noopener noreferrer">
               <span>Listen MP3</span> &rarr;
             </a>
-            <a href="fr-ep04-pilier-3-communs-du-calcul.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+            <a href="fr-ep04-pilier-3-communs-du-calcul.mp3" class="listen-link fr-only" target="_blank" rel="noopener noreferrer">
               <span>Écouter MP3</span> &rarr;
             </a>
           </div>
@@ -530,26 +527,26 @@
         </div>
         <div class="card-content">
           <div class="card-tag">
-            <span lang="en">Episode 05 • Pillar 4</span>
-            <span lang="fr">Épisode 05 • Pilier 4</span>
+            <span class="en-only">Episode 05 • Pillar 4</span>
+            <span class="fr-only">Épisode 05 • Pilier 4</span>
           </div>
           <h4 class="card-title">
-            <span lang="en">Episode 5: Pillar 4 — Synthetic Consequence</span>
-            <span lang="fr">Épisode 5 : Le Pilier 4 — La Conséquence Synthétique</span>
+            <span class="en-only">Episode 5: Pillar 4 — Synthetic Consequence</span>
+            <span class="fr-only">Épisode 5 : Le Pilier 4 — La Conséquence Synthétique</span>
           </h4>
           <p class="card-desc">
-            <span lang="en">Skin in the game for autonomous agents. Re-establishing general average, accountability, and real stakes in algorithmic decisions.</span>
-            <span lang="fr">Responsabilité réelle pour les agents autonomes. Réintroduire l'avarie commune et les enjeux concrets dans la décision algorithmique.</span>
+            <span class="en-only">Skin in the game for autonomous agents. Re-establishing general average, accountability, and real stakes in algorithmic decisions.</span>
+            <span class="fr-only">Responsabilité réelle pour les agents autonomes. Réintroduire l'avarie commune et les enjeux concrets dans la décision algorithmique.</span>
           </p>
           <div class="card-footer">
             <span class="file-label">
-              <span lang="en">en-ep05-pillar-4-synthetic-consequence.mp3</span>
-              <span lang="fr">fr-ep05-pilier-4-consequence-synthetique.mp3</span>
+              <span class="en-only">en-ep05-pillar-4-synthetic-consequence.mp3</span>
+              <span class="fr-only">fr-ep05-pilier-4-consequence-synthetique.mp3</span>
             </span>
-            <a href="en-ep05-pillar-4-synthetic-consequence.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+            <a href="en-ep05-pillar-4-synthetic-consequence.mp3" class="listen-link en-only" target="_blank" rel="noopener noreferrer">
               <span>Listen MP3</span> &rarr;
             </a>
-            <a href="fr-ep05-pilier-4-consequence-synthetique.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+            <a href="fr-ep05-pilier-4-consequence-synthetique.mp3" class="listen-link fr-only" target="_blank" rel="noopener noreferrer">
               <span>Écouter MP3</span> &rarr;
             </a>
           </div>
@@ -563,26 +560,26 @@
         </div>
         <div class="card-content">
           <div class="card-tag">
-            <span lang="en">Episode 06 • Pillar 5</span>
-            <span lang="fr">Épisode 06 • Pilier 5</span>
+            <span class="en-only">Episode 06 • Pillar 5</span>
+            <span class="fr-only">Épisode 06 • Pilier 5</span>
           </div>
           <h4 class="card-title">
-            <span lang="en">Episode 6: Pillar 5 — Neutral Intelligence</span>
-            <span lang="fr">Épisode 6 : Le Pilier 5 — L'Intelligence Neutre</span>
+            <span class="en-only">Episode 6: Pillar 5 — Neutral Intelligence</span>
+            <span class="fr-only">Épisode 6 : Le Pilier 5 — L'Intelligence Neutre</span>
           </h4>
           <p class="card-desc">
-            <span lang="en">Federated arbitration and impartial synthesis. Constructing trusted digital mediators independent of hegemonic platform biases.</span>
-            <span lang="fr">Arbitrage fédéré et synthèse impartiale. Bâtir des médiateurs numériques dignes de confiance, affranchis des biais hégémoniques.</span>
+            <span class="en-only">Federated arbitration and impartial synthesis. Constructing trusted digital mediators independent of hegemonic platform biases.</span>
+            <span class="fr-only">Arbitrage fédéré et synthèse impartiale. Bâtir des médiateurs numériques dignes de confiance, affranchis des biais hégémoniques.</span>
           </p>
           <div class="card-footer">
             <span class="file-label">
-              <span lang="en">en-ep06-pillar-5-neutral-intelligence.mp3</span>
-              <span lang="fr">fr-ep06-pilier-5-intelligence-neutre.mp3</span>
+              <span class="en-only">en-ep06-pillar-5-neutral-intelligence.mp3</span>
+              <span class="fr-only">fr-ep06-pilier-5-intelligence-neutre.mp3</span>
             </span>
-            <a href="en-ep06-pillar-5-neutral-intelligence.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+            <a href="en-ep06-pillar-5-neutral-intelligence.mp3" class="listen-link en-only" target="_blank" rel="noopener noreferrer">
               <span>Listen MP3</span> &rarr;
             </a>
-            <a href="fr-ep06-pilier-5-intelligence-neutre.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+            <a href="fr-ep06-pilier-5-intelligence-neutre.mp3" class="listen-link fr-only" target="_blank" rel="noopener noreferrer">
               <span>Écouter MP3</span> &rarr;
             </a>
           </div>
@@ -596,26 +593,26 @@
         </div>
         <div class="card-content">
           <div class="card-tag">
-            <span lang="en">Episode 07 • Operational I</span>
-            <span lang="fr">Épisode 07 • Opérationnel I</span>
+            <span class="en-only">Episode 07 • Operational I</span>
+            <span class="fr-only">Épisode 07 • Opérationnel I</span>
           </div>
           <h4 class="card-title">
-            <span lang="en">Episode 7: Building the Sovereign Stack</span>
-            <span lang="fr">Épisode 7 : Bâtir la Pile Souveraine</span>
+            <span class="en-only">Episode 7: Building the Sovereign Stack</span>
+            <span class="fr-only">Épisode 7 : Bâtir la Pile Souveraine</span>
           </h4>
           <p class="card-desc">
-            <span lang="en">Practical architecture: bare metal, local inference pipelines, and federated peer networks configured directly inside the alpine chalet.</span>
-            <span lang="fr">Architecture concrète : bare metal, pipelines d'inférence locale et réseaux fédérés configurés directement dans le chalet alpin.</span>
+            <span class="en-only">Practical architecture: bare metal, local inference pipelines, and federated peer networks configured directly inside the alpine chalet.</span>
+            <span class="fr-only">Architecture concrète : bare metal, pipelines d'inférence locale et réseaux fédérés configurés directement dans le chalet alpin.</span>
           </p>
           <div class="card-footer">
             <span class="file-label">
-              <span lang="en">en-ep07-building-the-sovereign-stack.mp3</span>
-              <span lang="fr">fr-ep07-stack-souverain.mp3</span>
+              <span class="en-only">en-ep07-building-the-sovereign-stack.mp3</span>
+              <span class="fr-only">fr-ep07-stack-souverain.mp3</span>
             </span>
-            <a href="en-ep07-building-the-sovereign-stack.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+            <a href="en-ep07-building-the-sovereign-stack.mp3" class="listen-link en-only" target="_blank" rel="noopener noreferrer">
               <span>Listen MP3</span> &rarr;
             </a>
-            <a href="fr-ep07-stack-souverain.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+            <a href="fr-ep07-stack-souverain.mp3" class="listen-link fr-only" target="_blank" rel="noopener noreferrer">
               <span>Écouter MP3</span> &rarr;
             </a>
           </div>
@@ -629,26 +626,26 @@
         </div>
         <div class="card-content">
           <div class="card-tag">
-            <span lang="en">Episode 08 • Operational II</span>
-            <span lang="fr">Épisode 08 • Opérationnel II</span>
+            <span class="en-only">Episode 08 • Operational II</span>
+            <span class="fr-only">Épisode 08 • Opérationnel II</span>
           </div>
           <h4 class="card-title">
-            <span lang="en">Episode 8: Reciprocal Governance Framework</span>
-            <span lang="fr">Épisode 8 : La Gouvernance Réciproque</span>
+            <span class="en-only">Episode 8: Reciprocal Governance Framework</span>
+            <span class="fr-only">Épisode 8 : La Gouvernance Réciproque</span>
           </h4>
           <p class="card-desc">
-            <span lang="en">Co-piloting protocols, cryptographic escrow checks, and organizational boundaries to collaborate with synthetic agents without yielding agency.</span>
-            <span lang="fr">Protocoles de co-pilotage, séquestres cryptographiques et frontières organisationnelles pour collaborer sans aliéner sa volonté.</span>
+            <span class="en-only">Co-piloting protocols, cryptographic escrow checks, and organizational boundaries to collaborate with synthetic agents without yielding agency.</span>
+            <span class="fr-only">Protocoles de co-pilotage, séquestres cryptographiques et frontières organisationnelles pour collaborer sans aliéner sa volonté.</span>
           </p>
           <div class="card-footer">
             <span class="file-label">
-              <span lang="en">en-ep08-reciprocal-governance-framework.mp3</span>
-              <span lang="fr">fr-ep08-gouvernance-reciproque.mp3</span>
+              <span class="en-only">en-ep08-reciprocal-governance-framework.mp3</span>
+              <span class="fr-only">fr-ep08-gouvernance-reciproque.mp3</span>
             </span>
-            <a href="en-ep08-reciprocal-governance-framework.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+            <a href="en-ep08-reciprocal-governance-framework.mp3" class="listen-link en-only" target="_blank" rel="noopener noreferrer">
               <span>Listen MP3</span> &rarr;
             </a>
-            <a href="fr-ep08-gouvernance-reciproque.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+            <a href="fr-ep08-gouvernance-reciproque.mp3" class="listen-link fr-only" target="_blank" rel="noopener noreferrer">
               <span>Écouter MP3</span> &rarr;
             </a>
           </div>
@@ -662,26 +659,26 @@
         </div>
         <div class="card-content">
           <div class="card-tag">
-            <span lang="en">Episode 09 • Operational III</span>
-            <span lang="fr">Épisode 09 • Opérationnel III</span>
+            <span class="en-only">Episode 09 • Operational III</span>
+            <span class="fr-only">Épisode 09 • Opérationnel III</span>
           </div>
           <h4 class="card-title">
-            <span lang="en">Episode 9: Leaving the Platform</span>
-            <span lang="fr">Épisode 9 : Quitter la Plateforme</span>
+            <span class="en-only">Episode 9: Leaving the Platform</span>
+            <span class="fr-only">Épisode 9 : Quitter la Plateforme</span>
           </h4>
           <p class="card-desc">
-            <span lang="en">A pragmatic migration roadmap for communities and creators to detach from walled gardens and transition to open commons.</span>
-            <span lang="fr">Une feuille de route pragmatique pour s'extraire des jardins clos et migrer durablement vers les communs ouverts.</span>
+            <span class="en-only">A pragmatic migration roadmap for communities and creators to detach from walled gardens and transition to open commons.</span>
+            <span class="fr-only">Une feuille de route pragmatique pour s'extraire des jardins clos et migrer durablement vers les communs ouverts.</span>
           </p>
           <div class="card-footer">
             <span class="file-label">
-              <span lang="en">en-ep09-leaving-the-platform.mp3</span>
-              <span lang="fr">fr-ep09-quitter-la-plateforme.mp3</span>
+              <span class="en-only">en-ep09-leaving-the-platform.mp3</span>
+              <span class="fr-only">fr-ep09-quitter-la-plateforme.mp3</span>
             </span>
-            <a href="en-ep09-leaving-the-platform.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+            <a href="en-ep09-leaving-the-platform.mp3" class="listen-link en-only" target="_blank" rel="noopener noreferrer">
               <span>Listen MP3</span> &rarr;
             </a>
-            <a href="fr-ep09-quitter-la-plateforme.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+            <a href="fr-ep09-quitter-la-plateforme.mp3" class="listen-link fr-only" target="_blank" rel="noopener noreferrer">
               <span>Écouter MP3</span> &rarr;
             </a>
           </div>
@@ -695,26 +692,26 @@
         </div>
         <div class="card-content">
           <div class="card-tag">
-            <span lang="en">Episode 10 • Epilogue</span>
-            <span lang="fr">Épisode 10 • Épilogue</span>
+            <span class="en-only">Episode 10 • Epilogue</span>
+            <span class="fr-only">Épisode 10 • Épilogue</span>
           </div>
           <h4 class="card-title">
-            <span lang="en">Episode 10: The Cost of Dawn</span>
-            <span lang="fr">Épisode 10 : Le Coût de l'Aube</span>
+            <span class="en-only">Episode 10: The Cost of Dawn</span>
+            <span class="fr-only">Épisode 10 : Le Coût de l'Aube</span>
           </h4>
           <p class="card-desc">
-            <span lang="en">The honest financial and hardware math: calculating capital expenditures, wattages, and long-term viability of sovereign human-AI symbiosis.</span>
-            <span lang="fr">L'équation financière et matérielle honnête : calcul des coûts, de la puissance et de la viabilité d'une symbiose souveraine.</span>
+            <span class="en-only">The honest financial and hardware math: calculating capital expenditures, wattages, and long-term viability of sovereign human-AI symbiosis.</span>
+            <span class="fr-only">L'équation financière et matérielle honnête : calcul des coûts, de la puissance et de la viabilité d'une symbiose souveraine.</span>
           </p>
           <div class="card-footer">
             <span class="file-label">
-              <span lang="en">en-ep10-the-cost-of-dawn.mp3</span>
-              <span lang="fr">fr-ep10-le-cout-de-l-aube.mp3</span>
+              <span class="en-only">en-ep10-the-cost-of-dawn.mp3</span>
+              <span class="fr-only">fr-ep10-le-cout-de-l-aube.mp3</span>
             </span>
-            <a href="en-ep10-the-cost-of-dawn.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+            <a href="en-ep10-the-cost-of-dawn.mp3" class="listen-link en-only" target="_blank" rel="noopener noreferrer">
               <span>Listen MP3</span> &rarr;
             </a>
-            <a href="fr-ep10-le-cout-de-l-aube.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+            <a href="fr-ep10-le-cout-de-l-aube.mp3" class="listen-link fr-only" target="_blank" rel="noopener noreferrer">
               <span>Écouter MP3</span> &rarr;
             </a>
           </div>
@@ -726,12 +723,12 @@
     <!-- SECTION 2: HORS-SÉRIE / SPECIAL EDITIONS (hs1 - hs4) -->
     <div class="section-title-wrap">
       <h3 class="section-title">
-        <span lang="en">Hors-Série / Deep Dives (HS 01–04)</span>
-        <span lang="fr">Hors-Série / Études Approfondies (HS 01 à 04)</span>
+        <span class="en-only">Hors-Série / Deep Dives (HS 01–04)</span>
+        <span class="fr-only">Hors-Série / Études Approfondies (HS 01 à 04)</span>
       </h3>
       <p class="section-desc">
-        <span lang="en">Special philosophical and architectural companion texts exploring historical precedents and mathematical guarantees.</span>
-        <span lang="fr">Cahiers philosophiques et architecturaux explorant les précédents historiques et les garanties mathématiques.</span>
+        <span class="en-only">Special philosophical and architectural companion texts exploring historical precedents and mathematical guarantees.</span>
+        <span class="fr-only">Cahiers philosophiques et architecturaux explorant les précédents historiques et les garanties mathématiques.</span>
       </p>
     </div>
 
@@ -743,27 +740,27 @@
         </div>
         <div class="card-content">
           <div class="card-tag">
-            <span lang="en">Hors-Série 01 • Deep Dive</span>
-            <span lang="fr">Hors-Série 01 • Cahier Spécial</span>
+            <span class="en-only">Hors-Série 01 • Deep Dive</span>
+            <span class="fr-only">Hors-Série 01 • Cahier Spécial</span>
           </div>
           <h4 class="card-title">
-            <span lang="en">Hors-Série 1: Open Source & The Modern Encyclopedia</span>
-            <span lang="fr">Hors-Série 1 : L'Open Source & L'Encyclopédie</span>
+            <span class="en-only">Hors-Série 1: Open Source & The Modern Encyclopedia</span>
+            <span class="fr-only">Hors-Série 1 : L'Open Source & L'Encyclopédie</span>
           </h4>
           <p class="card-desc">
-            <span lang="en">Diderot, d'Alembert, and the French Enlightenment as historical precursors to modern open weights and decentralized repository architectures.</span>
-            <span lang="fr">Diderot, d'Alembert et les Lumières comme précurseurs historiques des poids ouverts et des dépôts décentralisés.</span>
+            <span class="en-only">Diderot, d'Alembert, and the French Enlightenment as historical precursors to modern open weights and decentralized repository architectures.</span>
+            <span class="fr-only">Diderot, d'Alembert et les Lumières comme précurseurs historiques des poids ouverts et des dépôts décentralisés.</span>
           </p>
           <div class="card-footer">
             <span class="file-label">
-              <span lang="en">en-hs01-open-source-and-the-modern-encyclopedia.mp3</span>
-              <span lang="fr">fr-hs01-open-source-et-l-encyclopedie.mp3</span>
+              <span class="en-only">Coming Soon</span>
+              <span class="fr-only">Bientôt disponible</span>
             </span>
-            <a href="en-hs01-open-source-and-the-modern-encyclopedia.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
-              <span>Listen MP3</span> &rarr;
+            <a href="#hs01" class="listen-link coming-soon en-only">
+              <span>Audio Soon</span> &rarr;
             </a>
-            <a href="fr-hs01-open-source-et-l-encyclopedie.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
-              <span>Écouter MP3</span> &rarr;
+            <a href="#hs01" class="listen-link coming-soon fr-only">
+              <span>Audio Bientôt</span> &rarr;
             </a>
           </div>
         </div>
@@ -776,27 +773,27 @@
         </div>
         <div class="card-content">
           <div class="card-tag">
-            <span lang="en">Hors-Série 02 • Deep Dive</span>
-            <span lang="fr">Hors-Série 02 • Cahier Spécial</span>
+            <span class="en-only">Hors-Série 02 • Deep Dive</span>
+            <span class="fr-only">Hors-Série 02 • Cahier Spécial</span>
           </div>
           <h4 class="card-title">
-            <span lang="en">Hors-Série 2: The Pro-Human AI Declaration</span>
-            <span lang="fr">Hors-Série 2 : La Déclaration d'une IA Pro-Humaine</span>
+            <span class="en-only">Hors-Série 2: The Pro-Human AI Declaration</span>
+            <span class="fr-only">Hors-Série 2 : La Déclaration d'une IA Pro-Humaine</span>
           </h4>
           <p class="card-desc">
-            <span lang="en">A principled manifesto asserting human primacy, dignity, and sovereignty over algorithmic servitude and automated reductionism.</span>
-            <span lang="fr">Un manifeste affirmant la primauté et la dignité humaine face à la servitude algorithmique et au réductionnisme automatisé.</span>
+            <span class="en-only">A principled manifesto asserting human primacy, dignity, and sovereignty over algorithmic servitude and automated reductionism.</span>
+            <span class="fr-only">Un manifeste affirmant la primauté et la dignité humaine face à la servitude algorithmique et au réductionnisme automatisé.</span>
           </p>
           <div class="card-footer">
             <span class="file-label">
-              <span lang="en">en-hs02-the-pro-human-ai-declaration.mp3</span>
-              <span lang="fr">fr-hs02-la-declaration-d-une-ia-pro-humaine.mp3</span>
+              <span class="en-only">Coming Soon</span>
+              <span class="fr-only">Bientôt disponible</span>
             </span>
-            <a href="en-hs02-the-pro-human-ai-declaration.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
-              <span>Listen MP3</span> &rarr;
+            <a href="#hs02" class="listen-link coming-soon en-only">
+              <span>Audio Soon</span> &rarr;
             </a>
-            <a href="fr-hs02-la-declaration-d-une-ia-pro-humaine.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
-              <span>Écouter MP3</span> &rarr;
+            <a href="#hs02" class="listen-link coming-soon fr-only">
+              <span>Audio Bientôt</span> &rarr;
             </a>
           </div>
         </div>
@@ -809,27 +806,27 @@
         </div>
         <div class="card-content">
           <div class="card-tag">
-            <span lang="en">Hors-Série 03 • Deep Dive</span>
-            <span lang="fr">Hors-Série 03 • Cahier Spécial</span>
+            <span class="en-only">Hors-Série 03 • Deep Dive</span>
+            <span class="fr-only">Hors-Série 03 • Cahier Spécial</span>
           </div>
           <h4 class="card-title">
-            <span lang="en">Hors-Série 3: Private Enterprise & Public Utilities</span>
-            <span lang="fr">Hors-Série 3 : Entreprise Privée & Services Publics</span>
+            <span class="en-only">Hors-Série 3: Private Enterprise & Public Utilities</span>
+            <span class="fr-only">Hors-Série 3 : Entreprise Privée & Services Publics</span>
           </h4>
           <p class="card-desc">
-            <span lang="en">Bridging market dynamism with shared public infrastructure: how compute power becomes the new hydro-electric network of our era.</span>
-            <span lang="fr">Articuler dynamisme de marché et infrastructure publique partagée : quand le calcul devient le réseau hydroélectrique de notre époque.</span>
+            <span class="en-only">Bridging market dynamism with shared public infrastructure: how compute power becomes the new hydro-electric network of our era.</span>
+            <span class="fr-only">Articuler dynamisme de marché et infrastructure publique partagée : quand le calcul devient le réseau hydroélectrique de notre époque.</span>
           </p>
           <div class="card-footer">
             <span class="file-label">
-              <span lang="en">en-hs03-private-enterprise-and-public-utilities.mp3</span>
-              <span lang="fr">fr-hs03-entreprise-privee-et-services-publics.mp3</span>
+              <span class="en-only">Coming Soon</span>
+              <span class="fr-only">Bientôt disponible</span>
             </span>
-            <a href="en-hs03-private-enterprise-and-public-utilities.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
-              <span>Listen MP3</span> &rarr;
+            <a href="#hs03" class="listen-link coming-soon en-only">
+              <span>Audio Soon</span> &rarr;
             </a>
-            <a href="fr-hs03-entreprise-privee-et-services-publics.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
-              <span>Écouter MP3</span> &rarr;
+            <a href="#hs03" class="listen-link coming-soon fr-only">
+              <span>Audio Bientôt</span> &rarr;
             </a>
           </div>
         </div>
@@ -842,27 +839,27 @@
         </div>
         <div class="card-content">
           <div class="card-tag">
-            <span lang="en">Hors-Série 04 • Deep Dive</span>
-            <span lang="fr">Hors-Série 04 • Cahier Spécial</span>
+            <span class="en-only">Hors-Série 04 • Deep Dive</span>
+            <span class="fr-only">Hors-Série 04 • Cahier Spécial</span>
           </div>
           <h4 class="card-title">
-            <span lang="en">Hors-Série 4: The Mathematics of Trust (ZKP)</span>
-            <span lang="fr">Hors-Série 4 : ZKP & Mathématiques de la Confiance</span>
+            <span class="en-only">Hors-Série 4: The Mathematics of Trust (ZKP)</span>
+            <span class="fr-only">Hors-Série 4 : ZKP & Mathématiques de la Confiance</span>
           </h4>
           <p class="card-desc">
-            <span lang="en">Proving without revealing. How zero-knowledge cryptography guarantees institutional integrity and agent accountability without surveillance.</span>
-            <span lang="fr">Prouver sans dévoiler. Comment la cryptographie à divulgation nulle assure l'intégrité sans basculer dans la surveillance.</span>
+            <span class="en-only">Proving without revealing. How zero-knowledge cryptography guarantees institutional integrity and agent accountability without surveillance.</span>
+            <span class="fr-only">Prouver sans dévoiler. Comment la cryptographie à divulgation nulle assure l'intégrité sans basculer dans la surveillance.</span>
           </p>
           <div class="card-footer">
             <span class="file-label">
-              <span lang="en">en-hs04-the-mathematics-of-trust-zkp.mp3</span>
-              <span lang="fr">fr-hs04-zkp-et-mathematiques-de-la-confiance.mp3</span>
+              <span class="en-only">Coming Soon</span>
+              <span class="fr-only">Bientôt disponible</span>
             </span>
-            <a href="en-hs04-the-mathematics-of-trust-zkp.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
-              <span>Listen MP3</span> &rarr;
+            <a href="#hs04" class="listen-link coming-soon en-only">
+              <span>Audio Soon</span> &rarr;
             </a>
-            <a href="fr-hs04-zkp-et-mathematiques-de-la-confiance.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
-              <span>Écouter MP3</span> &rarr;
+            <a href="#hs04" class="listen-link coming-soon fr-only">
+              <span>Audio Bientôt</span> &rarr;
             </a>
           </div>
         </div>
