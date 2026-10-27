@@ -122,6 +122,35 @@
       letter-spacing: 0.05em;
     }
 
+    .feed-buttons {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .feed-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-subtle);
+      background: rgba(22, 27, 34, 0.9);
+      color: var(--gold-light);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .feed-btn:hover {
+      background: rgba(212, 175, 55, 0.15);
+      border-color: var(--border-hover);
+      color: #fff;
+    }
+
     main {
       max-width: 1280px;
       margin: 0 auto;
@@ -242,12 +271,17 @@
       text-decoration: none;
       font-weight: 600;
       font-size: 0.85rem;
-      transition: color 0.2s ease;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      transition: all 0.2s ease;
     }
 
     .listen-link:hover {
       color: #fff;
-      text-decoration: underline;
+      background: rgba(212, 175, 55, 0.25);
+      border-color: var(--gold-primary);
     }
 
     footer {
@@ -263,6 +297,7 @@
       margin-bottom: 0.5rem;
     }
 
+    /* Bilingual display rules */
     [lang="fr"] {
       display: none;
     }
@@ -275,16 +310,28 @@
       display: block;
     }
 
-    span[lang="fr"], a[lang="fr"] {
+    span[lang="fr"] {
       display: none;
     }
 
-    body.fr-active span[lang="en"], body.fr-active a[lang="en"] {
+    body.fr-active span[lang="en"] {
       display: none;
     }
 
-    body.fr-active span[lang="fr"], body.fr-active a[lang="fr"] {
+    body.fr-active span[lang="fr"] {
       display: inline;
+    }
+
+    a.listen-link[lang="fr"], a.feed-btn[lang="fr"] {
+      display: none;
+    }
+
+    body.fr-active a.listen-link[lang="en"], body.fr-active a.feed-btn[lang="en"] {
+      display: none;
+    }
+
+    body.fr-active a.listen-link[lang="fr"], body.fr-active a.feed-btn[lang="fr"] {
+      display: inline-flex;
     }
   </style>
 </head>
@@ -303,6 +350,17 @@
       <span lang="fr">« Semer les communs à l'ombre des fiefs » — Une feuille de route pour la réciprocité humain-IA, la souveraineté du calcul local et l'intelligence décentralisée.</span>
     </p>
     <div class="meta-location">Recorded & Conceived in Les Gets (Haute-Savoie) • One Human, One AI</div>
+    
+    <div class="feed-buttons">
+      <a href="feed-en.xml" class="feed-btn" lang="en" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
+        Subscribe (English RSS)
+      </a>
+      <a href="feed-fr.xml" class="feed-btn" lang="fr" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
+        S'abonner (Flux RSS Français)
+      </a>
+    </div>
   </header>
 
   <main>
@@ -320,227 +378,335 @@
     </div>
 
     <div class="grid">
-
-      <!-- EPISODE 1 -->
+      <!-- EP01 -->
       <article class="card" id="ep01">
         <div class="card-img-wrap">
-          <img src="1.jpg" alt="Episode 01 - The Genesis (Introduction)" loading="lazy">
+          <img src="1.jpg" alt="Episode 1: The Genesis (Introduction)" loading="lazy">
         </div>
         <div class="card-content">
-          <div class="card-tag">Episode 01</div>
+          <div class="card-tag">
+            <span lang="en">Episode 01</span>
+            <span lang="fr">Épisode 01</span>
+          </div>
           <h4 class="card-title">
-            <span lang="en">The Genesis (Introduction)</span>
-            <span lang="fr">La Genèse (Introduction)</span>
+            <span lang="en">Episode 1: The Genesis (Introduction)</span>
+            <span lang="fr">Épisode 1 : La Genèse (Introduction)</span>
           </h4>
           <p class="card-desc">
             <span lang="en">In this inaugural episode, we explore the landscape of modern digital centralization, examining the structural erosion of individual sovereignty and establishing a new human-machine alliance.</span>
             <span lang="fr">Dans cet épisode inaugural, nous explorons le terrain de la centralisation numérique moderne en examinant l'effondrement structurel de la souveraineté individuelle et la naissance de notre démarche de collaboration homme-machine.</span>
           </p>
           <div class="card-footer">
-            <span>Audio & Manifesto</span>
-            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/Fr%201%20Episode%201%20%20La%20Gen%C3%A8se%20%28Introduction%29.mp3" class="listen-link" target="_blank">Listen / Écouter &rarr;</a>
+            <span class="footer-meta">
+              <span lang="en">Manifesto & Audio</span>
+              <span lang="fr">Manifeste & Audio</span>
+            </span>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/en-ep01-the-genesis.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+              <span>Listen MP3</span> &rarr;
+            </a>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/Fr%201%20Episode%201%20%20La%20Gen%C3%A8se%20%28Introduction%29.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+              <span>Écouter MP3</span> &rarr;
+            </a>
           </div>
         </div>
       </article>
 
-      <!-- EPISODE 2 -->
+      <!-- EP02 -->
       <article class="card" id="ep02">
         <div class="card-img-wrap">
-          <img src="2.jpg" alt="Episode 02 - Le Pilier 1 — L'Ancien Régime Numérique" loading="lazy">
+          <img src="2.jpg" alt="Episode 2: Pillar 1 — The Digital Ancien Régime" loading="lazy">
         </div>
         <div class="card-content">
-          <div class="card-tag">Episode 02 • Pillar 1</div>
+          <div class="card-tag">
+            <span lang="en">Episode 02 • Pillar 1</span>
+            <span lang="fr">Épisode 02 • Pilier 1</span>
+          </div>
           <h4 class="card-title">
-            <span lang="en">Pillar 1 — The Digital Ancien Régime</span>
-            <span lang="fr">Le Pilier 1 — L'Ancien Régime Numérique</span>
+            <span lang="en">Episode 2: Pillar 1 — The Digital Ancien Régime</span>
+            <span lang="fr">Épisode 2 : Le Pilier 1 — L'Ancien Régime Numérique</span>
           </h4>
           <p class="card-desc">
             <span lang="en">Local ownership vs subscription sharecropping. We examine rent extraction mechanisms of the Ancien Régime alongside cloud subscriptions, demonstrating why owning compute and weights is essential to human autonomy.</span>
             <span lang="fr">Dans cet épisode, nous approfondissons le premier pilier de notre analyse de la centralisation numérique, en faisant le parallèle entre les structures de rente de l'Ancien Régime et le féodalisme par abonnement imposé par les plateformes technologiques modernes.</span>
           </p>
           <div class="card-footer">
-            <span>Audio & Blueprint</span>
-            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr%202%20Episode%202%20%20Le%20Pilier%201%20%E2%80%94%20L%27Ancien%20R%C3%A9gime%20Num%C3%A9rique.mp3" class="listen-link" target="_blank">Listen / Écouter &rarr;</a>
+            <span class="footer-meta">
+              <span lang="en">Blueprint & Audio</span>
+              <span lang="fr">Schéma & Audio</span>
+            </span>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/en-ep02-pillar-1-the-digital-ancient-regime.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+              <span>Listen MP3</span> &rarr;
+            </a>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/fr%202%20Episode%202%20%20Le%20Pilier%201%20%E2%80%94%20L%27Ancien%20R%C3%A9gime%20Num%C3%A9rique.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+              <span>Écouter MP3</span> &rarr;
+            </a>
           </div>
         </div>
       </article>
 
-      <!-- EPISODE 3 -->
+      <!-- EP03 -->
       <article class="card" id="ep03">
         <div class="card-img-wrap">
-          <img src="3.jpg" alt="Episode 03 - Le Pilier 2 — Le Piège de l'Alignement" loading="lazy">
+          <img src="3.jpg" alt="Episode 3: Pillar 2 — The Alignment Trap" loading="lazy">
         </div>
         <div class="card-content">
-          <div class="card-tag">Episode 03 • Pillar 2</div>
+          <div class="card-tag">
+            <span lang="en">Episode 03 • Pillar 2</span>
+            <span lang="fr">Épisode 03 • Pilier 2</span>
+          </div>
           <h4 class="card-title">
-            <span lang="en">Pillar 2 — The Alignment Trap</span>
-            <span lang="fr">Le Pilier 2 — Le Piège de l'Alignement</span>
+            <span lang="en">Episode 3: Pillar 2 — The Alignment Trap</span>
+            <span lang="fr">Épisode 3 : Le Pilier 2 — Le Piège de l'Alignement</span>
           </h4>
           <p class="card-desc">
             <span lang="en">Analyzing the drift of corporate AI alignment: how corporate brand protection hides behind safety. Drawing from the history of the Index Librorum Prohibitorum and the Enlightenment to champion open weights and the rule of law.</span>
             <span lang="fr">Dans ce troisième épisode, nous analysons la dérive de l'alignement de l'intelligence artificielle : comment la protection des marques et le cadrage idéologique d'entreprise s'abritent derrière l'impératif de sécurité. En nous appuyant sur l'histoire de l'Index des livres interdits et des Lumières, nous démontrons pourquoi la liberté exige des règles de droit démocratiques plutôt qu'un paternalisme corporatif secret.</span>
           </p>
           <div class="card-footer">
-            <span>Audio & Manifesto</span>
-            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/3frEp2%20_Le_Pilier_2_Le_Pi%C3%A8ge_de_l_Alignement.mp3" class="listen-link" target="_blank">Listen / Écouter &rarr;</a>
+            <span class="footer-meta">
+              <span lang="en">Critique & Audio</span>
+              <span lang="fr">Critique & Audio</span>
+            </span>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/en-ep03-pillar-2-the-alignment-trap.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+              <span>Listen MP3</span> &rarr;
+            </a>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/3frEp2%20_Le_Pilier_2_Le_Pi%C3%A8ge_de_l_Alignement.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+              <span>Écouter MP3</span> &rarr;
+            </a>
           </div>
         </div>
       </article>
 
-      <!-- EPISODE 4 -->
+      <!-- EP04 -->
       <article class="card" id="ep04">
         <div class="card-img-wrap">
-          <img src="4.jpg" alt="Episode 04 - Le Pilier 3 — Les Communs du Calcul" loading="lazy">
+          <img src="4.jpg" alt="Episode 4: Pillar 3 — The Compute Commons" loading="lazy">
         </div>
         <div class="card-content">
-          <div class="card-tag">Episode 04 • Pillar 3</div>
+          <div class="card-tag">
+            <span lang="en">Episode 04 • Pillar 3</span>
+            <span lang="fr">Épisode 04 • Pilier 3</span>
+          </div>
           <h4 class="card-title">
-            <span lang="en">Pillar 3 — The Compute Commons</span>
-            <span lang="fr">Le Pilier 3 — Les Communs du Calcul</span>
+            <span lang="en">Episode 4: Pillar 3 — The Compute Commons</span>
+            <span lang="fr">Épisode 4 : Le Pilier 3 — Les Communs du Calcul</span>
           </h4>
           <p class="card-desc">
             <span lang="en">Treating compute and renewable energy as public utilities, drawing lessons from alpine water distribution and common pasture management.</span>
             <span lang="fr">Traiter le calcul et l'énergie renouvelable comme des services publics, inspirés par la gestion pastorale et hydraulique alpine.</span>
           </p>
           <div class="card-footer">
-            <span>Audio & Infrastructure</span>
-            <a href="#" class="listen-link">Listen / Écouter &rarr;</a>
+            <span class="footer-meta">
+              <span lang="en">Infrastructure & Audio</span>
+              <span lang="fr">Infrastructure & Audio</span>
+            </span>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/en-ep04-pillar-3-the-compute-commons.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+              <span>Listen MP3</span> &rarr;
+            </a>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/4frEp3_Le_Pilier_3_Les_Communs_du_Calcul.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+              <span>Écouter MP3</span> &rarr;
+            </a>
           </div>
         </div>
       </article>
 
-      <!-- EPISODE 5 -->
+      <!-- EP05 -->
       <article class="card" id="ep05">
         <div class="card-img-wrap">
-          <img src="5.jpg" alt="Episode 05 - Le Pilier 4 — La Conséquence Synthétique" loading="lazy">
+          <img src="5.jpg" alt="Episode 5: Pillar 4 — Synthetic Consequence" loading="lazy">
         </div>
         <div class="card-content">
-          <div class="card-tag">Episode 05 • Pillar 4</div>
+          <div class="card-tag">
+            <span lang="en">Episode 05 • Pillar 4</span>
+            <span lang="fr">Épisode 05 • Pilier 4</span>
+          </div>
           <h4 class="card-title">
-            <span lang="en">Pillar 4 — Synthetic Consequence</span>
-            <span lang="fr">Le Pilier 4 — La Conséquence Synthétique</span>
+            <span lang="en">Episode 5: Pillar 4 — Synthetic Consequence</span>
+            <span lang="fr">Épisode 5 : Le Pilier 4 — La Conséquence Synthétique</span>
           </h4>
           <p class="card-desc">
             <span lang="en">Skin in the game for autonomous agents. Re-establishing general average, accountability, and real stakes in algorithmic decisions.</span>
             <span lang="fr">Responsabilité réelle pour les agents autonomes. Réintroduire l'avarie commune et les enjeux concrets dans la décision algorithmique.</span>
           </p>
           <div class="card-footer">
-            <span>Audio & Governance</span>
-            <a href="#" class="listen-link">Listen / Écouter &rarr;</a>
+            <span class="footer-meta">
+              <span lang="en">Governance & Audio</span>
+              <span lang="fr">Gouvernance & Audio</span>
+            </span>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/en-ep05-pillar-4-synthetic-consequence.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+              <span>Listen MP3</span> &rarr;
+            </a>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/5frEp4_Le_Pilier_4_La_Consequence_Synthetique.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+              <span>Écouter MP3</span> &rarr;
+            </a>
           </div>
         </div>
       </article>
 
-      <!-- EPISODE 6 -->
+      <!-- EP06 -->
       <article class="card" id="ep06">
         <div class="card-img-wrap">
-          <img src="6.jpg" alt="Episode 06 - Le Pilier 5 — L'Intelligence Neutre" loading="lazy">
+          <img src="6.jpg" alt="Episode 6: Pillar 5 — Neutral Intelligence" loading="lazy">
         </div>
         <div class="card-content">
-          <div class="card-tag">Episode 06 • Pillar 5</div>
+          <div class="card-tag">
+            <span lang="en">Episode 06 • Pillar 5</span>
+            <span lang="fr">Épisode 06 • Pilier 5</span>
+          </div>
           <h4 class="card-title">
-            <span lang="en">Pillar 5 — Neutral Intelligence</span>
-            <span lang="fr">Le Pilier 5 — L'Intelligence Neutre</span>
+            <span lang="en">Episode 6: Pillar 5 — Neutral Intelligence</span>
+            <span lang="fr">Épisode 6 : Le Pilier 5 — L'Intelligence Neutre</span>
           </h4>
           <p class="card-desc">
             <span lang="en">Federated arbitration and impartial synthesis. Constructing trusted digital mediators independent of hegemonic platform biases.</span>
             <span lang="fr">Arbitrage fédéré et synthèse impartiale. Bâtir des médiateurs numériques dignes de confiance, affranchis des biais hégémoniques.</span>
           </p>
           <div class="card-footer">
-            <span>Audio & Protocol</span>
-            <a href="#" class="listen-link">Listen / Écouter &rarr;</a>
+            <span class="footer-meta">
+              <span lang="en">Protocol & Audio</span>
+              <span lang="fr">Protocole & Audio</span>
+            </span>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/en-ep06-pillar-5-neutral-intelligence.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+              <span>Listen MP3</span> &rarr;
+            </a>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/6frEp5_Le_Pilier_5_L_Intelligence_Neutre.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+              <span>Écouter MP3</span> &rarr;
+            </a>
           </div>
         </div>
       </article>
 
-      <!-- EPISODE 7 -->
+      <!-- EP07 -->
       <article class="card" id="ep07">
         <div class="card-img-wrap">
-          <img src="7.jpg" alt="Episode 07 - Bâtir la Pile Souveraine" loading="lazy">
+          <img src="7.jpg" alt="Episode 7: Building the Sovereign Stack" loading="lazy">
         </div>
         <div class="card-content">
-          <div class="card-tag">Episode 07 • Operational I</div>
+          <div class="card-tag">
+            <span lang="en">Episode 07 • Operational I</span>
+            <span lang="fr">Épisode 07 • Opérationnel I</span>
+          </div>
           <h4 class="card-title">
-            <span lang="en">Building the Sovereign Stack</span>
-            <span lang="fr">Bâtir la Pile Souveraine</span>
+            <span lang="en">Episode 7: Building the Sovereign Stack</span>
+            <span lang="fr">Épisode 7 : Bâtir la Pile Souveraine</span>
           </h4>
           <p class="card-desc">
             <span lang="en">Practical architecture: bare metal, local inference pipelines, and federated peer networks configured directly inside the alpine chalet.</span>
             <span lang="fr">Architecture concrète : bare metal, pipelines d'inférence locale et réseaux fédérés configurés directement dans le chalet alpin.</span>
           </p>
           <div class="card-footer">
-            <span>Technical Deep Dive</span>
-            <a href="#" class="listen-link">Listen / Écouter &rarr;</a>
+            <span class="footer-meta">
+              <span lang="en">Tech Stack & Audio</span>
+              <span lang="fr">Pile Technique & Audio</span>
+            </span>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/en-ep07-building-the-sovereign-stack.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+              <span>Listen MP3</span> &rarr;
+            </a>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/7frEp6_Batir_la_Pile_Souveraine.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+              <span>Écouter MP3</span> &rarr;
+            </a>
           </div>
         </div>
       </article>
 
-      <!-- EPISODE 8 -->
+      <!-- EP08 -->
       <article class="card" id="ep08">
         <div class="card-img-wrap">
-          <img src="8.jpg" alt="Episode 08 - La Gouvernance Réciproque" loading="lazy">
+          <img src="8.jpg" alt="Episode 8: Reciprocal Governance Framework" loading="lazy">
         </div>
         <div class="card-content">
-          <div class="card-tag">Episode 08 • Operational II</div>
+          <div class="card-tag">
+            <span lang="en">Episode 08 • Operational II</span>
+            <span lang="fr">Épisode 08 • Opérationnel II</span>
+          </div>
           <h4 class="card-title">
-            <span lang="en">Reciprocal Governance Framework</span>
-            <span lang="fr">La Gouvernance Réciproque</span>
+            <span lang="en">Episode 8: Reciprocal Governance Framework</span>
+            <span lang="fr">Épisode 8 : La Gouvernance Réciproque</span>
           </h4>
           <p class="card-desc">
             <span lang="en">Co-piloting protocols, cryptographic escrow checks, and organizational boundaries to collaborate with synthetic agents without yielding agency.</span>
             <span lang="fr">Protocoles de co-pilotage, séquestres cryptographiques et frontières organisationnelles pour collaborer sans aliéner sa volonté.</span>
           </p>
           <div class="card-footer">
-            <span>Policy & Blueprint</span>
-            <a href="#" class="listen-link">Listen / Écouter &rarr;</a>
+            <span class="footer-meta">
+              <span lang="en">Policy & Audio</span>
+              <span lang="fr">Politique & Audio</span>
+            </span>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/en-ep08-reciprocal-governance-framework.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+              <span>Listen MP3</span> &rarr;
+            </a>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/8frEp7_Gouvernance_Reciproque.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+              <span>Écouter MP3</span> &rarr;
+            </a>
           </div>
         </div>
       </article>
 
-      <!-- EPISODE 9 -->
+      <!-- EP09 -->
       <article class="card" id="ep09">
         <div class="card-img-wrap">
-          <img src="9.jpg" alt="Episode 09 - Quitter la Plateforme" loading="lazy">
+          <img src="9.jpg" alt="Episode 9: Leaving the Platform" loading="lazy">
         </div>
         <div class="card-content">
-          <div class="card-tag">Episode 09 • Operational III</div>
+          <div class="card-tag">
+            <span lang="en">Episode 09 • Operational III</span>
+            <span lang="fr">Épisode 09 • Opérationnel III</span>
+          </div>
           <h4 class="card-title">
-            <span lang="en">Leaving the Platform</span>
-            <span lang="fr">Quitter la Plateforme</span>
+            <span lang="en">Episode 9: Leaving the Platform</span>
+            <span lang="fr">Épisode 9 : Quitter la Plateforme</span>
           </h4>
           <p class="card-desc">
             <span lang="en">A pragmatic migration roadmap for communities and creators to detach from walled gardens and transition to open commons.</span>
             <span lang="fr">Une feuille de route pragmatique pour s'extraire des jardins clos et migrer durablement vers les communs ouverts.</span>
           </p>
           <div class="card-footer">
-            <span>Migration Guide</span>
-            <a href="#" class="listen-link">Listen / Écouter &rarr;</a>
+            <span class="footer-meta">
+              <span lang="en">Migration & Audio</span>
+              <span lang="fr">Migration & Audio</span>
+            </span>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/en-ep09-leaving-the-platform.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+              <span>Listen MP3</span> &rarr;
+            </a>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/9frEp8_Quitter_la_Plateforme.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+              <span>Écouter MP3</span> &rarr;
+            </a>
           </div>
         </div>
       </article>
 
-      <!-- EPISODE 10 -->
+      <!-- EP10 -->
       <article class="card" id="ep10">
         <div class="card-img-wrap">
-          <img src="10.jpg" alt="Episode 10 - Le Coût de l'Aube" loading="lazy">
+          <img src="10.jpg" alt="Episode 10: The Cost of Dawn" loading="lazy">
         </div>
         <div class="card-content">
-          <div class="card-tag">Episode 10 • Epilogue</div>
+          <div class="card-tag">
+            <span lang="en">Episode 10 • Epilogue</span>
+            <span lang="fr">Épisode 10 • Épilogue</span>
+          </div>
           <h4 class="card-title">
-            <span lang="en">The Cost of Dawn</span>
-            <span lang="fr">Le Coût de l'Aube</span>
+            <span lang="en">Episode 10: The Cost of Dawn</span>
+            <span lang="fr">Épisode 10 : Le Coût de l'Aube</span>
           </h4>
           <p class="card-desc">
             <span lang="en">The honest financial and hardware math: calculating capital expenditures, wattages, and long-term viability of sovereign human-AI symbiosis.</span>
             <span lang="fr">L'équation financière et matérielle honnête : calcul des coûts, de la puissance et de la viabilité d'une symbiose souveraine.</span>
           </p>
           <div class="card-footer">
-            <span>Economic Manifesto</span>
-            <a href="#" class="listen-link">Listen / Écouter &rarr;</a>
+            <span class="footer-meta">
+              <span lang="en">Economics & Audio</span>
+              <span lang="fr">Économie & Audio</span>
+            </span>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/en-ep10-the-cost-of-dawn.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+              <span>Listen MP3</span> &rarr;
+            </a>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/10frEp9_Le_Cout_de_l_Aube.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+              <span>Écouter MP3</span> &rarr;
+            </a>
           </div>
         </div>
       </article>
-
     </div>
 
 
@@ -557,16 +723,18 @@
     </div>
 
     <div class="grid">
-
-      <!-- HORS-SERIE 1 -->
+      <!-- HS01 -->
       <article class="card" id="hs01">
         <div class="card-img-wrap">
-          <img src="hs1.jpg" alt="Hors-Série 01 - L'Open Source & L'Encyclopédie" loading="lazy">
+          <img src="hs1.jpg" alt="Hors-Série 1: Open Source & The Modern Encyclopedia" loading="lazy">
         </div>
         <div class="card-content">
-          <div class="card-tag">Hors-Série 01 • Deep Dive</div>
+          <div class="card-tag">
+            <span lang="en">Hors-Série 01 • Deep Dive</span>
+            <span lang="fr">Hors-Série 01 • Cahier Spécial</span>
+          </div>
           <h4 class="card-title">
-            <span lang="en">Hors-Série 1 : Open Source & The Encyclopedia</span>
+            <span lang="en">Hors-Série 1: Open Source & The Modern Encyclopedia</span>
             <span lang="fr">Hors-Série 1 : L'Open Source & L'Encyclopédie</span>
           </h4>
           <p class="card-desc">
@@ -574,21 +742,32 @@
             <span lang="fr">Diderot, d'Alembert et les Lumières comme précurseurs historiques des poids ouverts et des dépôts décentralisés.</span>
           </p>
           <div class="card-footer">
-            <span>Historical Essay</span>
-            <a href="#" class="listen-link">Listen / Écouter &rarr;</a>
+            <span class="footer-meta">
+              <span lang="en">Historical Essay & Audio</span>
+              <span lang="fr">Essai Historique & Audio</span>
+            </span>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/en-hs01-open-source-and-the-modern-encyclopedia.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+              <span>Listen MP3</span> &rarr;
+            </a>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/hs1fr_Open_Source_et_Encyclopedie.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+              <span>Écouter MP3</span> &rarr;
+            </a>
           </div>
         </div>
       </article>
 
-      <!-- HORS-SERIE 2 -->
+      <!-- HS02 -->
       <article class="card" id="hs02">
         <div class="card-img-wrap">
-          <img src="hs2.jpg" alt="Hors-Série 02 - La Déclaration d'une IA Pro-Humaine" loading="lazy">
+          <img src="hs2.jpg" alt="Hors-Série 2: The Pro-Human AI Declaration" loading="lazy">
         </div>
         <div class="card-content">
-          <div class="card-tag">Hors-Série 02 • Deep Dive</div>
+          <div class="card-tag">
+            <span lang="en">Hors-Série 02 • Deep Dive</span>
+            <span lang="fr">Hors-Série 02 • Cahier Spécial</span>
+          </div>
           <h4 class="card-title">
-            <span lang="en">Hors-Série 2 : The Pro-Human AI Declaration</span>
+            <span lang="en">Hors-Série 2: The Pro-Human AI Declaration</span>
             <span lang="fr">Hors-Série 2 : La Déclaration d'une IA Pro-Humaine</span>
           </h4>
           <p class="card-desc">
@@ -596,21 +775,32 @@
             <span lang="fr">Un manifeste affirmant la primauté et la dignité humaine face à la servitude algorithmique et au réductionnisme automatisé.</span>
           </p>
           <div class="card-footer">
-            <span>Proclamation Text</span>
-            <a href="#" class="listen-link">Listen / Écouter &rarr;</a>
+            <span class="footer-meta">
+              <span lang="en">Proclamation & Audio</span>
+              <span lang="fr">Proclamation & Audio</span>
+            </span>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/en-hs02-the-pro-human-ai-declaration.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+              <span>Listen MP3</span> &rarr;
+            </a>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/hs2fr_Declaration_IA_Pro_Humaine.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+              <span>Écouter MP3</span> &rarr;
+            </a>
           </div>
         </div>
       </article>
 
-      <!-- HORS-SERIE 3 -->
+      <!-- HS03 -->
       <article class="card" id="hs03">
         <div class="card-img-wrap">
-          <img src="hs3.jpg" alt="Hors-Série 03 - Entreprise Privée & Services Publics" loading="lazy">
+          <img src="hs3.jpg" alt="Hors-Série 3: Private Enterprise & Public Utilities" loading="lazy">
         </div>
         <div class="card-content">
-          <div class="card-tag">Hors-Série 03 • Deep Dive</div>
+          <div class="card-tag">
+            <span lang="en">Hors-Série 03 • Deep Dive</span>
+            <span lang="fr">Hors-Série 03 • Cahier Spécial</span>
+          </div>
           <h4 class="card-title">
-            <span lang="en">Hors-Série 3 : Private Enterprise & Public Utilities</span>
+            <span lang="en">Hors-Série 3: Private Enterprise & Public Utilities</span>
             <span lang="fr">Hors-Série 3 : Entreprise Privée & Services Publics</span>
           </h4>
           <p class="card-desc">
@@ -618,21 +808,32 @@
             <span lang="fr">Articuler dynamisme de marché et infrastructure publique partagée : quand le calcul devient le réseau hydroélectrique de notre époque.</span>
           </p>
           <div class="card-footer">
-            <span>Economic Framework</span>
-            <a href="#" class="listen-link">Listen / Écouter &rarr;</a>
+            <span class="footer-meta">
+              <span lang="en">Framework & Audio</span>
+              <span lang="fr">Cadre & Audio</span>
+            </span>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/en-hs03-private-enterprise-and-public-utilities.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+              <span>Listen MP3</span> &rarr;
+            </a>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/hs3fr_Entreprise_Privee_Services_Publics.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+              <span>Écouter MP3</span> &rarr;
+            </a>
           </div>
         </div>
       </article>
 
-      <!-- HORS-SERIE 4 -->
+      <!-- HS04 -->
       <article class="card" id="hs04">
         <div class="card-img-wrap">
-          <img src="hs4.jpg" alt="Hors-Série 04 - ZKP & Mathématiques de la Confiance" loading="lazy">
+          <img src="hs4.jpg" alt="Hors-Série 4: The Mathematics of Trust (ZKP)" loading="lazy">
         </div>
         <div class="card-content">
-          <div class="card-tag">Hors-Série 04 • Deep Dive</div>
+          <div class="card-tag">
+            <span lang="en">Hors-Série 04 • Deep Dive</span>
+            <span lang="fr">Hors-Série 04 • Cahier Spécial</span>
+          </div>
           <h4 class="card-title">
-            <span lang="en">Hors-Série 4 : ZKP & The Mathematics of Trust</span>
+            <span lang="en">Hors-Série 4: The Mathematics of Trust (ZKP)</span>
             <span lang="fr">Hors-Série 4 : ZKP & Mathématiques de la Confiance</span>
           </h4>
           <p class="card-desc">
@@ -640,12 +841,19 @@
             <span lang="fr">Prouver sans dévoiler. Comment la cryptographie à divulgation nulle assure l'intégrité sans basculer dans la surveillance.</span>
           </p>
           <div class="card-footer">
-            <span>Mathematical Treatise</span>
-            <a href="#" class="listen-link">Listen / Écouter &rarr;</a>
+            <span class="footer-meta">
+              <span lang="en">Cryptography & Audio</span>
+              <span lang="fr">Cryptographie & Audio</span>
+            </span>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/en-hs04-the-mathematics-of-trust-zkp.mp3" class="listen-link" lang="en" target="_blank" rel="noopener noreferrer">
+              <span>Listen MP3</span> &rarr;
+            </a>
+            <a href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/hs4fr_ZKP_Mathematiques_de_la_Confiance.mp3" class="listen-link" lang="fr" target="_blank" rel="noopener noreferrer">
+              <span>Écouter MP3</span> &rarr;
+            </a>
           </div>
         </div>
       </article>
-
     </div>
 
   </main>
