@@ -198,69 +198,14 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
 
-    <!-- Hors-Série 1 -->
-    <item>
-      <title>BIENTOT Hors-Série 1 : L'Open Source &amp; L'Encyclopédie</title>
-      <itunes:title>L'Open Source &amp; L'Encyclopédie</itunes:title>
-      <itunes:episodeType>bonus</itunes:episodeType>
-      <itunes:season>1</itunes:season>
-      <guid isPermaLink="false">fr-episode-hs1</guid>
-      <pubDate>Mon, 02 Nov 2026 08:00:00 GMT</pubDate>
-      <link>https://pynr8cdnn4-beep.github.io/reciprocal-alliance-podcast/#hs01</link>
-      <description>Diderot, d'Alembert et les Lumières comme précurseurs historiques des poids ouverts et des dépôts décentralisés.</description>
-      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/XXXXXXXXXXX.mp3" length="3600000" type="audio/mpeg"/>
-      <itunes:duration>360</itunes:duration>
-      <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/hs1.jpg"/>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-
-    <!-- Hors-Série 2 -->
-    <item>
-      <title>BIENTOT Hors-Série 2 : La Déclaration d'une IA Pro-Humaine</title>
-      <itunes:title>La Déclaration d'une IA Pro-Humaine</itunes:title>
-      <itunes:episodeType>bonus</itunes:episodeType>
-      <itunes:season>1</itunes:season>
-      <guid isPermaLink="false">fr-episode-hs2</guid>
-      <pubDate>Tue, 03 Nov 2026 08:00:00 GMT</pubDate>
-      <link>https://pynr8cdnn4-beep.github.io/reciprocal-alliance-podcast/#hs02</link>
-      <description>Un manifeste affirmant la primauté et la dignité humaine face à la servitude algorithmique et au réductionnisme automatisé.</description>
-      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/xxxxxxxxxxx.mp3" length="3300000" type="audio/mpeg"/>
-      <itunes:duration>330</itunes:duration>
-      <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/hs2.jpg"/>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-
-    <!-- Hors-Série 3 -->
-    <item>
-      <title>BIENTOT Hors-Série 3 : Entreprise Privée &amp; Services Publics</title>
-      <itunes:title>Entreprise Privée &amp; Services Publics</itunes:title>
-      <itunes:episodeType>bonus</itunes:episodeType>
-      <itunes:season>1</itunes:season>
-      <guid isPermaLink="false">fr-episode-hs3</guid>
-      <pubDate>Wed, 04 Nov 2026 08:00:00 GMT</pubDate>
-      <link>https://pynr8cdnn4-beep.github.io/reciprocal-alliance-podcast/#hs03</link>
-      <description>Articuler dynamisme de marché et infrastructure publique partagée : quand le calcul devient le réseau hydroélectrique de notre époque.</description>
-      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/xxxxxxxxx.mp3" length="3450000" type="audio/mpeg"/>
-      <itunes:duration>345</itunes:duration>
-      <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/hs3.jpg"/>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-
-    <!-- Hors-Série 4 -->
-    <item>
-      <title>BIENTOT Hors-Série 4 : ZKP &amp; Mathématiques de la Confiance</title>
-      <itunes:title>ZKP &amp; Mathématiques de la Confiance</itunes:title>
-      <itunes:episodeType>bonus</itunes:episodeType>
-      <itunes:season>1</itunes:season>
-      <guid isPermaLink="false">fr-episode-hs4</guid>
-      <pubDate>Thu, 05 Nov 2026 08:00:00 GMT</pubDate>
-      <link>https://pynr8cdnn4-beep.github.io/reciprocal-alliance-podcast/#hs04</link>
-      <description>Prouver sans dévoiler. Comment la cryptographie à divulgation nulle assure l'intégrité sans basculer dans la surveillance.</description>
-      <enclosure url="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/xxxxxxx.mp3" length="3700000" type="audio/mpeg"/>
-      <itunes:duration>370</itunes:duration>
-      <itunes:image href="https://raw.githubusercontent.com/pynr8cdnn4-beep/reciprocal-alliance-podcast/main/hs4.jpg"/>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
+    <!-- 
+      HORS-SERIE (A activer des que les fichiers MP3 correspondants sont uploades sur GitHub)
+      
+      HS 1: fr-hs01-open-source-et-l-encyclopedie.mp3
+      HS 2: fr-hs02-la-declaration-d-une-ia-pro-humaine.mp3
+      HS 3: fr-hs03-entreprise-privee-et-services-publics.mp3
+      HS 4: fr-hs04-zkp-et-mathematiques-de-la-confiance.mp3
+    -->
 
   </channel>
 </rss>
